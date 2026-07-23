@@ -1,0 +1,162 @@
+/* ============================================================
+   ARAHOST Help Desk — CLIENT PORTAL theme
+   Realizes the vide-osticket-preview.html mockup inside osTicket's
+   actual DOM (badge header, district subtitle, navy navbar,
+   ticket card, gold CTA, navy footer).
+   ============================================================ */
+
+:root {
+  --vide-navy-900:#0a1f44;
+  --vide-navy-800:#102a56;
+  --vide-navy-700:#163a70;
+  --vide-navy-600:#1e4c8f;
+  --vide-gold-500:#f2a900;
+  --vide-gold-600:#d69400;
+  --vide-gold-100:#fdf1d6;
+  --vide-gray-50:#f7f8fa;
+  --vide-gray-100:#eef0f3;
+  --vide-gray-200:#dde1e7;
+  --vide-gray-300:#c3c9d1;
+  --vide-gray-500:#6b7280;
+  --vide-gray-700:#374151;
+  --vide-gray-900:#1a1d23;
+  --vide-shadow:0 4px 14px rgba(10,31,68,.12);
+  --vide-radius:14px;
+  --vide-focus:0 0 0 3px rgba(242,169,0,.5);
+}
+
+body { background:var(--vide-gray-50); color:var(--vide-gray-900); }
+#container { min-height:100vh; display:flex; flex-direction:column; }
+
+/* ---- Arahos client header ---- */
+#vide-client-header {
+  background: linear-gradient(180deg, var(--vide-navy-900), var(--vide-navy-800));
+  border-bottom: 3px solid var(--vide-gold-500);
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 14px;
+}
+.vide-badge {
+  width: 38px; height: 38px; border-radius: 8px;
+  background: var(--vide-gold-500); color: var(--vide-navy-900);
+  font-weight: 800; display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; text-decoration: none; flex: 0 0 auto;
+}
+.vide-brand { line-height: 1.2; }
+.vide-title { color:#fff; font-weight:700; font-size:1.1rem; }
+.vide-sub {
+  color: var(--vide-gray-300); font-size:.72rem;
+  letter-spacing:.04em; text-transform:uppercase;
+}
+.vide-usermenu {
+  margin-left:auto; color: var(--vide-gray-100);
+  font-size:.85rem; display:flex; align-items:center; gap:6px;
+}
+.vide-usermenu a, .vide-usermenu b { color: var(--vide-gold-500); text-decoration:none; }
+.vide-usermenu a:hover { text-decoration: underline; }
+
+/* ---- Arahos client navbar ---- */
+#vide-client-nav { background: var(--vide-navy-700); }
+#vide-client-nav #nav {
+  list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap;
+}
+#vide-client-nav #nav li { display:inline-block; }
+#vide-client-nav #nav li a {
+  color:#fff; text-decoration:none; font-weight:500; font-size:.9rem;
+  padding:12px 18px; display:inline-block;
+}
+#vide-client-nav #nav li a:hover:not(.active) { background: var(--vide-navy-600); }
+#vide-client-nav #nav li a.active,
+#vide-client-nav #nav li.active a {
+  background: var(--vide-gold-500); color: var(--vide-navy-900); font-weight:700;
+}
+
+/* ---- content / landing cards ---- */
+#content { flex:1 1 auto; padding: 24px 16px 0; }
+#content h1 { color: var(--vide-navy-900); }
+#content .page-title { color: var(--vide-navy-900); }
+
+/* ticket-open form card (the Open a Ticket page) */
+#content form, #content .form, #content .ticket-form, #content .thread-entry {
+  max-width: 760px; margin: 0 auto;
+  background:#fff; border:1px solid var(--vide-gray-200);
+  border-radius: var(--vide-radius); box-shadow: var(--vide-shadow);
+  padding: 28px;
+}
+#content h2 { color: var(--vide-navy-900); margin-top:0; }
+#content label, #content .field label, #content .form-header {
+  display:block; font-weight:600; color: var(--vide-gray-700);
+  margin:16px 0 6px; font-size:.88rem;
+}
+#content input[type=text], #content input[type=email], #content input[type=search],
+#content input[type=password], #content select, #content textarea {
+  width:100%; border:1px solid var(--vide-gray-300); border-radius:4px;
+  padding:11px 12px; font-size:.95rem; font-family:inherit; background:#fff;
+}
+#content input:focus, #content select:focus, #content textarea:focus {
+  outline:none; border-color: var(--vide-gold-500); box-shadow: var(--vide-focus);
+}
+#content .row2, #content .two-columns { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+
+/* ---- Buttons: primary CTA = gold ---- */
+#content .button.green, #content input[type=submit],
+#content button[type=submit], #content .btn {
+  margin-top:22px; background: var(--vide-gold-500); color: var(--vide-navy-900);
+  border:none; padding:12px 22px; border-radius:4px; font-weight:700;
+  font-size:.95rem; cursor:pointer;
+}
+#content .button.green:hover, #content input[type=submit]:hover,
+#content button[type=submit]:hover { background: var(--vide-gold-600); }
+#content .button, #content input[type=button] {
+  background: var(--vide-navy-700); color:#fff; border:1px solid var(--vide-navy-900);
+}
+#content .button:hover { background: var(--vide-navy-600); }
+
+/* ---- notice / error banners ---- */
+#content #msg_notice, #content .notice-banner {
+  background: var(--vide-gold-100); border-left:4px solid var(--vide-gold-500);
+  color: var(--vide-navy-900); padding:10px 14px; border-radius:4px;
+}
+#content #msg_error, #content .error-banner { border-left:4px solid #d64545; }
+#content #msg_warning, #content .warning-banner { border-left:4px solid var(--vide-gold-600); }
+
+/* ---- Knowledgebase / landing cards ---- */
+#content .featured-category.front-page {
+  border:1px solid var(--vide-gray-200); border-radius: var(--vide-radius);
+  box-shadow: var(--vide-shadow); background:#fff;
+}
+#content .search-form {
+  background: var(--vide-navy-800); border:1px solid var(--vide-navy-700);
+  border-radius:10px; padding:14px;
+}
+
+/* ---- Arahos client footer ---- */
+#vide-client-footer {
+  background: var(--vide-navy-900); color: var(--vide-gray-300);
+  text-align:center; padding:18px; font-size:.8rem; margin-top:28px;
+}
+#vide-client-footer a { color: var(--vide-gold-500); text-decoration:none; }
+
+@media (max-width:640px){
+  #vide-client-nav #nav { flex-wrap:wrap; }
+  #content .row2 { grid-template-columns:1fr; }
+  #vide-client-header { padding:0 14px; gap:10px; }
+}
+
+/* ============================================================
+   Arahos client portal — text contrast fix
+   ============================================================ */
+body #content,
+body #content p,
+body #content li,
+body #content td,
+body .content p,
+body #landing_page p {
+  color: #1f2937 !important;
+}
+body #content a { color: #163a70 !important; }
+body #content a:hover { color: #f2a900 !important; }
+/* Keep light text where background is navy */
+body #header a, body #footer a, body .navy a { color: #fff !important; }
