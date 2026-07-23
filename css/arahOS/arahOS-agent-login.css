@@ -1,5 +1,5 @@
 /* ============================================================
-   Arahos Help Desk — Unified Agent Login (split-screen)
+   arahOS Help Desk — Unified Agent Login (split-screen)
    Left: credentials form · Right: navy status dashboard
    ============================================================ */
 
@@ -31,27 +31,27 @@ body#loginBody{
 #brickwall,#blur,#background{display:none !important;}
 
 /* ---- split layout ---- */
-#arahos-login-wrap{
+#arahOS-login-wrap{
   display:flex; min-height:100vh; width:100%;
 }
-#arahos-login-left{
+#arahOS-login-left{
   flex:0 0 42%; max-width:42%;
   display:flex; align-items:center; justify-content:center;
   padding:48px 44px; background:#fff;
 }
-#arahos-login-right{
+#arahOS-login-right{
   flex:1 1 58%;
   background:linear-gradient(160deg,var(--vl-navy-900),var(--vl-navy-800) 60%,var(--vl-navy-700));
   display:flex; align-items:center; justify-content:center;
   padding:48px 40px; position:relative; overflow:hidden;
 }
-#arahos-login-right::before{
+#arahOS-login-right::before{
   content:""; position:absolute; inset:0;
   background:radial-gradient(circle at 80% 15%,rgba(242,169,0,.14),transparent 45%);
 }
 
 /* ---- left: form ---- */
-#arahos-login-card{ width:100%; max-width:380px; }
+#arahOS-login-card{ width:100%; max-width:380px; }
 .vl-brandline{ display:flex; align-items:center; gap:12px; margin-bottom:26px; }
 .vl-badge{
   width:44px;height:44px;border-radius:10px;background:var(--vl-gold-500);
@@ -60,15 +60,15 @@ body#loginBody{
 }
 .vl-brandtext .t{font-weight:800;font-size:1.05rem;letter-spacing:.02em;color:var(--vl-ink);line-height:1.1;}
 .vl-brandtext .s{font-size:.72rem;color:var(--vl-gray-500);text-transform:uppercase;letter-spacing:.06em;}
-#arahos-login-card h2{margin:0 0 4px;font-size:1.5rem;color:var(--vl-navy-700);font-weight:800;}
-#arahos-login-card .vl-sub{margin:0 0 22px;color:var(--vl-gray-500);font-size:.9rem;}
+#arahOS-login-card h2{margin:0 0 4px;font-size:1.5rem;color:var(--vl-navy-700);font-weight:800;}
+#arahOS-login-card .vl-sub{margin:0 0 22px;color:var(--vl-gray-500);font-size:.9rem;}
 
-#arahos-login-card .vl-msg{
+#arahOS-login-card .vl-msg{
   background:#eef4ff;border-left:4px solid var(--vl-navy-600);color:var(--vl-navy-700);
   padding:9px 12px;border-radius:8px;font-size:.85rem;margin-bottom:16px;display:none;
 }
-#arahos-login-card .vl-msg.show{display:block;}
-#arahos-login-card .vl-msg.error{background:#fdecea;border-left-color:#d64545;color:#8a1f1a;}
+#arahOS-login-card .vl-msg.show{display:block;}
+#arahOS-login-card .vl-msg.error{background:#fdecea;border-left-color:#d64545;color:#8a1f1a;}
 
 .vl-field{position:relative;margin-bottom:14px;}
 .vl-field i{
@@ -89,13 +89,13 @@ body#loginBody{
 .vl-hint{font-size:.72rem;color:var(--vl-gray-500);margin:2px 2px 16px;line-height:1.5;}
 .vl-hint strong{color:var(--vl-navy-700);}
 
-#arahos-login-card button.vl-signin{
+#arahOS-login-card button.vl-signin{
   width:100%;padding:13px;border:none;border-radius:999px;
   background:var(--vl-navy-800);color:#fff;font-weight:700;font-size:.98rem;
   cursor:pointer;transition:background .15s;font-family:inherit;
 }
-#arahos-login-card button.vl-signin:hover{background:var(--vl-navy-700);}
-#arahos-login-card button.vl-signin:disabled{opacity:.6;cursor:default;}
+#arahOS-login-card button.vl-signin:hover{background:var(--vl-navy-700);}
+#arahOS-login-card button.vl-signin:disabled{opacity:.6;cursor:default;}
 
 .vl-links{margin-top:18px;font-size:.85rem;color:var(--vl-gray-500);}
 .vl-links a{color:var(--vl-navy-600);font-weight:600;text-decoration:underline;}
@@ -139,20 +139,20 @@ body#loginBody{
 
 /* ---- responsive ---- */
 @media (max-width:900px){
-  #arahos-login-right{display:none;}
-  #arahos-login-left{flex:1 1 100%;max-width:100%;}
+  #arahOS-login-right{display:none;}
+  #arahOS-login-left{flex:1 1 100%;max-width:100%;}
 }
 
 #poweredBy,#company{position:static;text-align:center;}
 
 /* override legacy scp/css/login.css h3 (which is red/uppercase) */
-#arahos-login-wrap h3#login-message{color:var(--vl-navy-700);text-transform:none;font-weight:600;text-align:left;}
-#arahos-login-wrap h3#login-message.error{color:#8a1f1a;}
-#arahos-login-right .vl-panel h3{color:#fff !important;text-transform:none;text-align:left;}
-#arahos-login-right .vl-svc .st{text-transform:uppercase;}
+#arahOS-login-wrap h3#login-message{color:var(--vl-navy-700);text-transform:none;font-weight:600;text-align:left;}
+#arahOS-login-wrap h3#login-message.error{color:#8a1f1a;}
+#arahOS-login-right .vl-panel h3{color:#fff !important;text-transform:none;text-align:left;}
+#arahOS-login-right .vl-svc .st{text-transform:uppercase;}
 
 /* ============================================================
-   ARAHOS — Banner logo on agent login (left panel top)
+   arahOS — Banner logo on agent login (left panel top)
    ============================================================ */
 .vl-brandline-logo { margin-bottom: 18px !important; }
 .vl-banner-logo {

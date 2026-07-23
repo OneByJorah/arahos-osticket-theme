@@ -7,12 +7,12 @@ header("Content-Security-Policy: frame-ancestors ".$cfg->getAllowIframes()."; sc
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="refresh" content="7200" />
-    <title>Arahos Help Desk :: <?php echo __('Agent Login'); ?></title>
+    <title>arahOS Help Desk :: <?php echo __('Agent Login'); ?></title>
     <link rel="stylesheet" href="css/login.css" type="text/css" />
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/font-awesome.min.css?8d38b06"/>
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahos/arahos-tokens.css?v=5">
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahos/arahos-staff-panel.css?v=5">
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahos/arahos-agent-login.css?v=3">
+    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahOS/arahOS-tokens.css?v=5">
+    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahOS/arahOS-staff-panel.css?v=5">
+    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahOS/arahOS-agent-login.css?v=3">
     <meta name="robots" content="noindex" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="pragma" content="no-cache" />

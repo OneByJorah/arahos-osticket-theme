@@ -1,5 +1,5 @@
 /* ============================================================
-   Arahos Help Desk — Staff Panel Theme (v5 rewrite)
+   arahOS Help Desk — Staff Panel Theme (v5 rewrite)
    Every override marked !important. Visual-only: does not touch
    #content width/position (osTicket JS measures it).
    Target: osTicket 1.18.x SCP
@@ -11,19 +11,19 @@ body, body, #content, #pjax-container { font-size: 14px !important; color: #1a1d
 
 /* Table headers + rows — match scp.css specificity */
 table.list { border-radius: 8px !important; overflow: hidden !important; border: 1px solid #e5e7eb !important; background: #fff !important; }
-table.list thead th { background-color: var(--arahos-navy-900, #0a1f44) !important; color: #fff !important; font-size: 13px !important; font-weight: 700 !important; padding: 10px 12px !important; text-align: left !important; }
+table.list thead th { background-color: var(--arahOS-navy-900, #0a1f44) !important; color: #fff !important; font-size: 13px !important; font-weight: 700 !important; padding: 10px 12px !important; text-align: left !important; }
 table.list thead th a { color: #fff !important; }
 table.list tbody td { font-size: 13px !important; color: #1a1d23 !important; padding: 8px 12px !important; border: 1px solid #f3f4f6 !important; background: #fff !important; vertical-align: middle !important; }
 table.list tbody tr:nth-child(2n+1) td { background: #f9fafb !important; }
 table.list tbody tr:hover td { background: #fdf1d6 !important; }
-table.list tfoot td { background: var(--arahos-navy-900, #0a1f44) !important; color: #fff !important; font-weight: 600 !important; }
+table.list tfoot td { background: var(--arahOS-navy-900, #0a1f44) !important; color: #fff !important; font-weight: 600 !important; }
 
 /* Nav links bigger */
 #nav li a { font-size: 14px !important; font-weight: 600 !important; padding: 10px 16px !important; }
 #sub_nav li a { font-size: 13px !important; font-weight: 600 !important; padding: 8px 14px !important; }
 
 /* Headings */
-#content h1, #content h2, #content h3, #pjax-container h1, #pjax-container h2, #pjax-container h3 { color: var(--arahos-navy-900, #0a1f44) !important; }
+#content h1, #content h2, #content h3, #pjax-container h1, #pjax-container h2, #pjax-container h3 { color: var(--arahOS-navy-900, #0a1f44) !important; }
 #content h2, #pjax-container h2 { font-size: 18px !important; font-weight: 800 !important; }
 #content h3, #pjax-container h3 { font-size: 16px !important; font-weight: 700 !important; }
 
@@ -40,23 +40,23 @@ table.list tfoot td { background: var(--arahos-navy-900, #0a1f44) !important; co
 
 /* Forms + inputs */
 input, select, textarea { font-size: 14px !important; border: 1px solid #d1d5db !important; border-radius: 6px !important; padding: 6px 10px !important; }
-input:focus, select:focus, textarea:focus { border-color: var(--arahos-gold-500, #f2a900) !important; box-shadow: 0 0 0 2px rgba(242,169,0,.2) !important; outline: none !important; }
+input:focus, select:focus, textarea:focus { border-color: var(--arahOS-gold-500, #f2a900) !important; box-shadow: 0 0 0 2px rgba(242,169,0,.2) !important; outline: none !important; }
 
 /* Buttons */
 button, input[type=submit], .btn, .button { font-size: 14px !important; font-weight: 600 !important; border-radius: 6px !important; padding: 8px 16px !important; }
-.btn-primary, .button_primary, input[type=submit].btn-primary { background: var(--arahos-navy-900, #0a1f44) !important; color: #fff !important; border: none !important; }
-button:hover, input[type=submit]:hover, .btn:hover, .button:hover { background: var(--arahos-gold-500, #f2a900) !important; color: var(--arahos-navy-900, #0a1f44) !important; }
+.btn-primary, .button_primary, input[type=submit].btn-primary { background: var(--arahOS-navy-900, #0a1f44) !important; color: #fff !important; border: none !important; }
+button:hover, input[type=submit]:hover, .btn:hover, .button:hover { background: var(--arahOS-gold-500, #f2a900) !important; color: var(--arahOS-navy-900, #0a1f44) !important; }
 
 /* Ticket queue stats */
 .queue-stats, .stats { font-size: 13px !important; color: #374151 !important; }
 
-@import url("arahos-tokens.css");
+@import url("arahOS-tokens.css");
 
 /* ---------- Base ---------- */
 body {
-  font-family: var(--arahos-font-base) !important;
-  background: var(--arahos-gray-50) !important;
-  color: var(--arahos-gray-900) !important;
+  font-family: var(--arahOS-font-base) !important;
+  background: var(--arahOS-gray-50) !important;
+  color: var(--arahOS-gray-900) !important;
   margin: 0 !important;
   font-size: 0.92rem !important;
 }
@@ -73,16 +73,16 @@ body {
   height: auto !important;
   min-height: 50px !important;
   padding: 8px 20px !important;
-  background: var(--arahos-navy-900) !important;
-  border-bottom: 3px solid var(--arahos-gold-500) !important;
-  color: var(--arahos-white) !important;
+  background: var(--arahOS-navy-900) !important;
+  border-bottom: 3px solid var(--arahOS-gold-500) !important;
+  color: var(--arahOS-white) !important;
   overflow: visible !important;
 }
 
 #header a,
 #staff-header a,
 .staff-header a {
-  color: var(--arahos-white) !important;
+  color: var(--arahOS-white) !important;
   text-decoration: none !important;
   font-weight: 500 !important;
 }
@@ -109,7 +109,7 @@ ul.tabs {
   padding: 0 16px !important;
   height: auto !important;
   min-height: 40px !important;
-  background: var(--arahos-navy-800) !important;
+  background: var(--arahOS-navy-800) !important;
   border: none !important;
   box-shadow: none !important;
   white-space: normal !important;
@@ -135,7 +135,7 @@ ul.tabs li a {
   width: auto !important;
   padding: 8px 16px !important;
   margin: 0 !important;
-  color: var(--arahos-gray-100) !important;
+  color: var(--arahOS-gray-100) !important;
   font-weight: 500 !important;
   font-size: 0.88rem !important;
   text-decoration: none !important;
@@ -149,8 +149,8 @@ ul.tabs li a {
 #nav li a:hover,
 #nav.tabs li a:hover,
 ul.tabs li a:hover {
-  background: var(--arahos-gold-500) !important;
-  color: var(--arahos-navy-900) !important;
+  background: var(--arahOS-gold-500) !important;
+  color: var(--arahOS-navy-900) !important;
   background-image: none !important;
 }
 
@@ -158,8 +158,8 @@ ul.tabs li a:hover {
 #nav.tabs li.active a,
 ul.tabs li.active a,
 #nav li.active a:hover {
-  background: var(--arahos-gold-500) !important;
-  color: var(--arahos-navy-900) !important;
+  background: var(--arahOS-gold-500) !important;
+  color: var(--arahOS-navy-900) !important;
   font-weight: 700 !important;
   background-image: none !important;
 }
@@ -169,8 +169,8 @@ ul.tabs li.active a,
 #sidebar,
 .sidebar,
 ul.sub-nav {
-  background: var(--arahos-gray-50) !important;
-  border-right: 1px solid var(--arahos-gray-200) !important;
+  background: var(--arahOS-gray-50) !important;
+  border-right: 1px solid var(--arahOS-gray-200) !important;
   padding: 8px 0 !important;
   margin: 0 !important;
 }
@@ -178,7 +178,7 @@ ul.sub-nav {
 #sub_nav a,
 .sidebar a,
 ul.sub-nav a {
-  color: var(--arahos-navy-700) !important;
+  color: var(--arahOS-navy-700) !important;
   text-decoration: none !important;
   font-weight: 500 !important;
   display: block !important;
@@ -189,16 +189,16 @@ ul.sub-nav a {
 #sub_nav a:hover,
 .sidebar a:hover,
 ul.sub-nav a:hover {
-  color: var(--arahos-gold-600) !important;
+  color: var(--arahOS-gold-600) !important;
 }
 
 #sub_nav li.active a,
 .sidebar li.active a,
 ul.sub-nav li.active a {
-  border-left: 3px solid var(--arahos-gold-500) !important;
-  background: var(--arahos-gold-100) !important;
+  border-left: 3px solid var(--arahOS-gold-500) !important;
+  background: var(--arahOS-gold-100) !important;
   font-weight: 700 !important;
-  color: var(--arahos-navy-900) !important;
+  color: var(--arahOS-navy-900) !important;
 }
 
 /* ---------- Buttons ---------- */
@@ -206,8 +206,8 @@ ul.sub-nav li.active a {
 input[type="submit"],
 button.btn,
 button {
-  background: var(--arahos-navy-700) !important;
-  color: var(--arahos-white) !important;
+  background: var(--arahOS-navy-700) !important;
+  color: var(--arahOS-white) !important;
   border: none !important;
   border-radius: 6px !important;
   font-weight: 600 !important;
@@ -221,22 +221,22 @@ button {
 }
 .btn:hover,
 input[type="submit"]:hover {
-  background: var(--arahos-navy-600) !important;
+  background: var(--arahOS-navy-600) !important;
 }
 .btn.green,
 .btn.blue,
 .btn.orange {
-  background: var(--arahos-gold-500) !important;
-  color: var(--arahos-navy-900) !important;
+  background: var(--arahOS-gold-500) !important;
+  color: var(--arahOS-navy-900) !important;
   font-weight: 700 !important;
 }
 .btn.green:hover,
 .btn.blue:hover,
 .btn.orange:hover {
-  background: var(--arahos-gold-600) !important;
+  background: var(--arahOS-gold-600) !important;
 }
 .btn.red {
-  background: var(--arahos-st-overdue) !important;
+  background: var(--arahOS-st-overdue) !important;
   color: #fff !important;
 }
 
@@ -250,7 +250,7 @@ table.grid,
 table.list th,
 table.grid th,
 .queue_table th {
-  background: var(--arahos-navy-900) !important;
+  background: var(--arahOS-navy-900) !important;
   color: #fff !important;
   font-weight: 600 !important;
   padding: 8px 10px !important;
@@ -261,10 +261,10 @@ table.list td,
 table.grid td,
 .queue_table td {
   padding: 8px 10px !important;
-  border-bottom: 1px solid var(--arahos-gray-100) !important;
-  color: var(--arahos-gray-900) !important;
+  border-bottom: 1px solid var(--arahOS-gray-100) !important;
+  color: var(--arahOS-gray-900) !important;
 }
-table.list tr:hover td { background: var(--arahos-gray-50) !important; }
+table.list tr:hover td { background: var(--arahOS-gray-50) !important; }
 tr.overdue td,
 .Row.overdue td { background: rgba(214,69,69,0.06) !important; }
 tr.answered td { background: rgba(30,142,90,0.06) !important; }
@@ -284,22 +284,22 @@ tr.answered td { background: rgba(30,142,90,0.06) !important; }
 .thread-entry,
 .thread-message {
   border-radius: 8px !important;
-  border: 1px solid var(--arahos-gray-200) !important;
+  border: 1px solid var(--arahOS-gray-200) !important;
   margin-bottom: 12px !important;
 }
 .thread-entry .header,
 .thread-message .header {
-  background: var(--arahos-gray-50) !important;
+  background: var(--arahOS-gray-50) !important;
   padding: 10px 14px !important;
   border-radius: 8px 8px 0 0 !important;
 }
 .thread-entry.staff-entry .header,
 .staff-entry .header {
-  border-left: 3px solid var(--arahos-gold-500) !important;
+  border-left: 3px solid var(--arahOS-gold-500) !important;
 }
 .thread-entry.message .header,
 .thread-entry.client .header {
-  border-left: 3px solid var(--arahos-navy-600) !important;
+  border-left: 3px solid var(--arahOS-navy-600) !important;
 }
 
 /* ---------- Focus visibility ---------- */
@@ -320,7 +320,7 @@ select:focus {
 
 /* ---------- Footer credit ---------- */
 #footer #arahosCredit {
-  color: var(--arahos-gold-500) !important;
+  color: var(--arahOS-gold-500) !important;
   font-size: 0.78rem !important;
   font-weight: 600 !important;
   letter-spacing: 0.02em !important;
@@ -328,7 +328,7 @@ select:focus {
 }
 
 /* ---------- Dark mode toggle (injected by JS) ---------- */
-arahos-theme-toggle {
+arahOS-theme-toggle {
   background: none !important;
   border: 1px solid rgba(255,255,255,0.25) !important;
   color: #fff !important;
@@ -341,10 +341,10 @@ arahos-theme-toggle {
   cursor: pointer !important;
   margin-left: 8px !important;
 }
-arahos-theme-toggle:hover { background: rgba(255,255,255,0.1) !important; }
+arahOS-theme-toggle:hover { background: rgba(255,255,255,0.1) !important; }
 
 /* ---------- Mobile sidebar toggle (injected by JS) ---------- */
-arahos-sidebar-toggle {
+arahOS-sidebar-toggle {
   display: none !important;
   background: none !important;
   border: none !important;
@@ -367,7 +367,7 @@ arahos-sidebar-toggle {
 }
 
 @media (max-width: 768px) {
-  arahos-sidebar-toggle {
+  arahOS-sidebar-toggle {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -390,19 +390,19 @@ arahos-sidebar-toggle {
     overflow-y: auto !important;
     padding-top: 10px !important;
   }
-  #sub_navarahos-sidebar-open,
-  #sidebararahos-sidebar-open,
-  .sidebararahos-sidebar-open {
+  #sub_navarahOS-sidebar-open,
+  #sidebararahOS-sidebar-open,
+  .sidebararahOS-sidebar-open {
     transform: translateX(0) !important;
   }
-  arahos-sidebar-backdrop {
+  arahOS-sidebar-backdrop {
     display: none !important;
     position: fixed !important;
     inset: 0 !important;
     background: rgba(10,31,68,0.4) !important;
     z-index: 900 !important;
   }
-  arahos-sidebar-backdroparahos-sidebar-open {
+  arahOS-sidebar-backdroparahOS-sidebar-open {
     display: block !important;
   }
 
@@ -472,7 +472,7 @@ arahos-sidebar-toggle {
 }
 
 /* ============================================================
-   ARAHOS v6 patch — Dashboard report tables + buttons
+   arahOS v6 patch — Dashboard report tables + buttons
    osTicket dashboard uses table.dashboard-stats (NOT table.list)
    and button.link.button for Export. These were unstyled.
    ============================================================ */
@@ -494,7 +494,7 @@ arahos-sidebar-toggle {
 #content table.dashboard-stats thead th,
 #content .report-container table thead th,
 #content table.dashboard-stats th {
-  background: var(--arahos-navy-900, #0a1f44) !important;
+  background: var(--arahOS-navy-900, #0a1f44) !important;
   color: #fff !important;
   font-size: 12.5px !important;
   font-weight: 700 !important;
@@ -521,16 +521,16 @@ arahos-sidebar-toggle {
 #content table.dashboard-stats tbody tr:hover td { background: #fdf1d6 !important; }
 #content table.dashboard-stats tfoot td {
   background: #f1f4f9 !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
   font-weight: 700 !important;
-  border-top: 2px solid var(--arahos-navy-700, #163a70) !important;
+  border-top: 2px solid var(--arahOS-navy-700, #163a70) !important;
 }
 
 /* ---- Export button (button.link.button rendered plain) ---- */
 #content button.link.button,
 #content a.link.button,
 .dashboard-stats-container button.link.button {
-  background: var(--arahos-navy-700, #163a70) !important;
+  background: var(--arahOS-navy-700, #163a70) !important;
   color: #fff !important;
   border: none !important;
   border-radius: 6px !important;
@@ -544,8 +544,8 @@ arahos-sidebar-toggle {
 }
 #content button.link.button:hover,
 #content a.link.button:hover {
-  background: var(--arahos-gold-500, #f2a900) !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+  background: var(--arahOS-gold-500, #f2a900) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
 }
 
 /* ---- Report period datepicker: don't let generic input override squish it ---- */

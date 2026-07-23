@@ -1,5 +1,5 @@
 /* ============================================================
-   Arahos Help Desk — Landing page accordion toggle
+   arahOS Help Desk — Landing page accordion toggle
    Expands/collapses the Front Page FAQ items.
    ============================================================ */
 (function () {
@@ -9,10 +9,10 @@
     else document.addEventListener("DOMContentLoaded", fn);
   }
   ready(function () {
-    document.querySelectorAll("arahos-acc-toggle").forEach(function (btn) {
+    document.querySelectorAll("arahOS-acc-toggle").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        var item = btn.closest("arahos-acc-item");
-        var body = item.querySelector("arahos-acc-body");
+        var item = btn.closest("arahOS-acc-item");
+        var body = item.querySelector("arahOS-acc-body");
         var open = item.classList.toggle("open");
         btn.setAttribute("aria-expanded", open ? "true" : "false");
         if (open) body.removeAttribute("hidden");

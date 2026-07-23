@@ -42,9 +42,9 @@ if (osTicket::is_ie())
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Arahos Help Desk">
-    <link rel="apple-touch-icon" href="/images/arahos/pwa/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/images/arahos/pwa/icon-192.png">
+    <meta name="apple-mobile-web-app-title" content="arahOS Help Desk">
+    <link rel="apple-touch-icon" href="/images/arahOS/pwa/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/images/arahOS/pwa/icon-192.png">
 	<link rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/osticket.css?8d38b06" media="screen"/>
     <link rel="stylesheet" href="<?php echo ASSETS_PATH; ?>css/theme.css?8d38b06" media="screen"/>
     <link rel="stylesheet" href="<?php echo ASSETS_PATH; ?>css/print.css?8d38b06" media="print"/>
@@ -55,8 +55,8 @@ if (osTicket::is_ie())
     <link rel="stylesheet" href="<?php echo ROOT_PATH ?>css/jquery-ui-timepicker-addon.css?8d38b06" media="all"/>
     <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/thread.css?8d38b06" media="screen"/>
     <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/redactor.css?8d38b06" media="screen"/>
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahos/arahos-tokens.css?v=3">
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahos/arahos-client-portal.css?v=34">
+    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahOS/arahOS-tokens.css?v=3">
+    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahOS/arahOS-client-portal.css?v=34">
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/font-awesome.min.css?8d38b06"/>
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/flags.css?8d38b06"/>
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/rtl.css?8d38b06"/>
@@ -110,14 +110,14 @@ if (osTicket::is_ie())
             echo sprintf('<div class="notice_bar">%s</div>', $ost->getNotice());
         ?>
         <div id="header">
-            <a class="arahos-header-logo" id="logo" href="<?php echo ROOT_PATH; ?>index.php"
+            <a class="arahOS-header-logo" id="logo" href="<?php echo ROOT_PATH; ?>index.php"
             title="<?php echo __('Support Center'); ?>">
-                <img src="<?php echo ROOT_PATH; ?>images/arahos/arahos-banner-logo.png" border=0 alt="<?php
+                <img src="<?php echo ROOT_PATH; ?>images/arahOS/arahOS-banner-logo.png" border=0 alt="<?php
                 echo $ost->getConfig()->getTitle(); ?>">
             </a>
-            <div class="arahos-header-right">
+            <div class="arahOS-header-right">
                 <?php if($nav){ ?>
-                <ul id="nav" class="arahos-header-nav">
+                <ul id="nav" class="arahOS-header-nav">
                     <?php
                     if($nav && ($navs=$nav->getNavLinks()) && is_array($navs)){
                         foreach($navs as $name =>$nav) {
@@ -126,7 +126,7 @@ if (osTicket::is_ie())
                     } ?>
                 </ul>
                 <?php } ?>
-                <div class="arahos-header-user">
+                <div class="arahOS-header-user">
                  <?php
                     if ($thisclient && is_object($thisclient) && $thisclient->isValid()
                         && !$thisclient->isGuest()) {
@@ -138,7 +138,7 @@ if (osTicket::is_ie())
                 <?php
                 } elseif($nav) {
                     if ($cfg->getClientRegistrationMode() == 'public') { ?>
-                        <span class="arahos-guest"><?php echo __('Guest User'); ?></span> <span class="arahos-sep">|</span> <?php
+                        <span class="arahOS-guest"><?php echo __('Guest User'); ?></span> <span class="arahOS-sep">|</span> <?php
                     }
                     if ($thisclient && $thisclient->isValid() && $thisclient->isGuest()) { ?>
                         <a href="<?php echo $signout_url; ?>"><?php echo __('Sign Out'); ?></a><?php

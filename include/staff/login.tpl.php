@@ -5,21 +5,21 @@ $info = ($_POST && $errors)?Format::htmlchars($_POST):array();
 if ($thisstaff && $thisstaff->is2FAPending())
     $msg = "2FA Pending";
 
-$company = Format::htmlchars($ost->company) ?: 'Arahos Help Desk';
+$company = Format::htmlchars($ost->company) ?: 'arahOS Help Desk';
 $checked = date('M j, Y · g:ia');
 ?>
-<div id="arahos-login-wrap">
+<div id="arahOS-login-wrap">
 
   <!-- ================= LEFT: credentials ================= -->
-  <div id="arahos-login-left">
-    <div id="arahos-login-card">
+  <div id="arahOS-login-left">
+    <div id="arahOS-login-card">
 
       <div class="vl-brandline vl-brandline-logo">
-        <img class="vl-banner-logo" src="<?php echo ROOT_PATH; ?>images/arahos/arahos-banner-logo.png" alt="<?php echo $company; ?>">
+        <img class="vl-banner-logo" src="<?php echo ROOT_PATH; ?>images/arahOS/arahOS-banner-logo.png" alt="<?php echo $company; ?>">
       </div>
 
-      <h2>Arahos Help Desk</h2>
-      <p class="vl-sub">Enter your Arahos network credentials</p>
+      <h2>arahOS Help Desk</h2>
+      <p class="vl-sub">Enter your arahOS network credentials</p>
 
       <?php $is_err = ($_POST && $errors) || $show_reset; ?>
       <h3 id="login-message" class="vl-msg <?php echo $msg ? 'show' : ''; ?> <?php echo $is_err ? 'error' : ''; ?>"><?php echo Format::htmlchars($msg); ?></h3>
@@ -58,7 +58,7 @@ $checked = date('M j, Y · g:ia');
             </div>
             <p class="vl-hint">
               Sign in with your username (e.g. <strong>firstname.lastname</strong>).<br>
-              You may also use <strong>firstname.lastname@arahos.vi</strong> or <strong>firstname.lastname@k12.vi</strong>.
+              You may also use <strong>firstname.lastname@arahOS.vi</strong> or <strong>firstname.lastname@k12.vi</strong>.
             </p>
             <button class="vl-signin" type="submit" name="submit"><?php echo __('Sign in'); ?></button>
 
@@ -87,10 +87,10 @@ $checked = date('M j, Y · g:ia');
   </div>
 
   <!-- ================= RIGHT: status dashboard ================= -->
-  <div id="arahos-login-right">
+  <div id="arahOS-login-right">
     <div class="vl-panel">
       <h3>Support services</h3>
-      <p class="vl-panelsub">Arahos help desk status &amp; contact channels.</p>
+      <p class="vl-panelsub">arahOS help desk status &amp; contact channels.</p>
 
       <span class="vl-allok"><span class="dot"></span> All systems operational</span>
 

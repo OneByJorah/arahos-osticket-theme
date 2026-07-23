@@ -1,9 +1,9 @@
 <?php
 /**
- * ARAHOST Help Desk Theme for osTicket
+ * arahOST Help Desk Theme for osTicket
  *
  * Brands the osTicket client support portal and the staff (agent) control
- * panel with the Arahos navy (#0a1f44) + gold (#f2a900) design.
+ * panel with the arahOS navy (#0a1f44) + gold (#f2a900) design.
  *
  * HOW IT WORKS
  * -----------
@@ -18,10 +18,10 @@
  * <style> is emitted rather than a <link>).
  */
 
-class ArahosOSTicketTheme extends Plugin {
+class arahOSOSTicketTheme extends Plugin {
 
     // Declared so the plugin instance can be configured/enabled in the UI.
-    var $config_class = 'ArahosOSTicketThemeConfig';
+    var $config_class = 'arahOSOSTicketThemeConfig';
 
     /**
      * Required by osTicket — PluginInstance::bootstrap() calls this
@@ -30,7 +30,7 @@ class ArahosOSTicketTheme extends Plugin {
      * do nothing here. The actual navy/gold CSS is injected by the
      * overridden header templates (client/header.inc.php and
      * staff/header.inc.php) which render after $ost/$cfg are live and
-     * call ArahosOSTicketTheme::cssBlock().
+     * call arahOSOSTicketTheme::cssBlock().
      */
     function bootstrap() {
         // Intentionally empty — see cssBlock() and the header templates.
@@ -42,7 +42,7 @@ class ArahosOSTicketTheme extends Plugin {
      */
     static function cssBlock($which) {
         $file = $which === 'staff' ? 'staff.css' : 'client.css';
-        $base = INCLUDE_DIR . 'plugins/arahos-theme/';
+        $base = INCLUDE_DIR . 'plugins/arahOS-theme/';
         $path = $base . $file;
         if (!is_file($path) || !is_readable($path)) {
             // Fall back to repo-relative layout.
@@ -59,11 +59,11 @@ class ArahosOSTicketTheme extends Plugin {
             return '';
         }
         return sprintf(
-            "<style id=\"arahos-theme\" type=\"text/css\">\n%s\n</style>",
+            "<style id=\"arahOS-theme\" type=\"text/css\">\n%s\n</style>",
             $css
         );
     }
 }
 
-class ArahosOSTicketThemeConfig extends PluginConfig {
+class arahOSOSTicketThemeConfig extends PluginConfig {
 }

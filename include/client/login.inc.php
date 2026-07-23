@@ -10,16 +10,16 @@ if ($content) {
     list($title, $body) = $ost->replaceTemplateVariables(
         array($content->getLocalName(), $content->getLocalBody()));
 } else {
-    $title = __('Sign In to Arahos Help Desk');
-    $body = __('Sign in with your network username in the format <strong>firstname.lastname</strong>. You may also use <strong>firstname.lastname@arahos.example</strong> or <strong>firstname.lastname@arahos.example</strong>. Use the same password you use to log into your computer.');
+    $title = __('Sign In to arahOS Help Desk');
+    $body = __('Sign in with your network username in the format <strong>firstname.lastname</strong>. You may also use <strong>firstname.lastname@arahOS.example</strong> or <strong>firstname.lastname@arahOS.example</strong>. Use the same password you use to log into your computer.');
 }
 ?>
 <div id="auth">
   <div id="auth-left">
-    <div class="logo-wrap arahos-banner-logo-wrap">
-      <img class="arahos-banner-logo" src="<?php echo ROOT_PATH; ?>images/arahos/arahos-banner-logo.png" alt="<?php echo Format::htmlchars($ost->getConfig()->getTitle()); ?>">
+    <div class="logo-wrap arahOS-banner-logo-wrap">
+      <img class="arahOS-banner-logo" src="<?php echo ROOT_PATH; ?>images/arahOS/arahOS-banner-logo.png" alt="<?php echo Format::htmlchars($ost->getConfig()->getTitle()); ?>">
       <h1 class="auth-title"><?php echo Format::htmlchars($ost->getConfig()->getTitle()); ?></h1>
-      <p class="auth-subtitle">Enter your Arahos network credentials</p>
+      <p class="auth-subtitle">Enter your arahOS network credentials</p>
     </div>
 
     <div class="form-wrap">
@@ -81,7 +81,7 @@ if ($content) {
         </p>
 
         <div class="agent-login-note">
-          <span><?php echo __('Are you a Arahos agent or staff member?'); ?></span>
+          <span><?php echo __('Are you a arahOS agent or staff member?'); ?></span>
           <a href="<?php echo ROOT_PATH; ?>scp/login.php" class="btn agent-login-btn"><?php echo __('Sign in to the Agent Panel'); ?></a>
         </div>
       </form>
@@ -96,7 +96,7 @@ if ($content) {
   <div id="auth-right">
     <div class="live-panel">
       <h2>Support services</h2>
-      <p class="sub">Arahos help desk status & contact channels.</p>
+      <p class="sub">arahOS help desk status & contact channels.</p>
       <div class="svc-badge"><span class="live-pulse"></span>All systems operational</div>
 
       <div class="svc-cards">

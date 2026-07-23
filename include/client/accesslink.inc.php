@@ -46,7 +46,7 @@ else
     }
 }?>
         <div class="agent-login-note">
-            <span><?php echo __('Are you a Arahos agent or staff member?'); ?></span>
+            <span><?php echo __('Are you a arahOS agent or staff member?'); ?></span>
             <a href="scp/login.php" class="btn agent-login-btn"><?php echo __('Sign in to the Agent Panel'); ?></a>
         </div>
     </div>

@@ -1,10 +1,10 @@
 /* ============================================================
-   Arahos Help Desk — Client Portal Theme (v5 rewrite)
+   arahOS Help Desk — Client Portal Theme (v5 rewrite)
    Every override marked !important to beat osTicket theme.css.
    Target: osTicket 1.18.x
    ============================================================ */
 
-@import url("arahos-tokens.css");
+@import url("arahOS-tokens.css");
 
 /* ---------- Reset / base ---------- */
 * { box-sizing: border-box !important; }
@@ -12,9 +12,9 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: var(--arahos-font-base) !important;
-  background: var(--arahos-gray-50) !important;
-  color: var(--arahos-gray-900) !important;
+  font-family: var(--arahOS-font-base) !important;
+  background: var(--arahOS-gray-50) !important;
+  color: var(--arahOS-gray-900) !important;
   -webkit-text-size-adjust: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
@@ -25,7 +25,7 @@ body {
   width: 100% !important;
   max-width: 1200px !important;
   margin: 0 auto !important;
-  background: var(--arahos-gray-50) !important;
+  background: var(--arahOS-gray-50) !important;
   box-shadow: 0 0 20px rgba(0,0,0,0.4) !important;
   float: none !important;
   border-radius: 0 0 8px 8px !important;
@@ -41,8 +41,8 @@ body {
   height: auto !important;
   min-height: 70px !important;
   padding: 12px 24px !important;
-  background: linear-gradient(180deg, var(--arahos-navy-900), var(--arahos-navy-800)) !important;
-  border-bottom: 3px solid var(--arahos-gold-500) !important;
+  background: linear-gradient(180deg, var(--arahOS-navy-900), var(--arahOS-navy-800)) !important;
+  border-bottom: 3px solid var(--arahOS-gold-500) !important;
   overflow: visible !important;
 }
 
@@ -59,7 +59,7 @@ body {
 }
 #header a#logo img,
 img#logo {
-  content: url("../../images/arahos/arahos-seal.png") !important;
+  content: url("../../images/arahOS/arahOS-seal.png") !important;
   height: 64px !important;
   width: auto !important;
   max-height: 64px !important;
@@ -106,7 +106,7 @@ a#logo,
 }
 #header .pull-right a,
 #header p a {
-  color: var(--arahos-gold-500) !important;
+  color: var(--arahOS-gold-500) !important;
   font-weight: 700 !important;
   text-decoration: none !important;
 }
@@ -118,12 +118,12 @@ a#logo,
 #header .valign-helper { display: none !important; }
 
 /* Dark mode toggle */
-arahos-theme-toggle {
+arahOS-theme-toggle {
   background: none !important;
   order: 3 !important;
   flex-shrink: 0 !important;
   border: 1px solid rgba(255,255,255,0.3) !important;
-  color: var(--arahos-white) !important;
+  color: var(--arahOS-white) !important;
   border-radius: 999px !important;
   width: 36px !important;
   height: 36px !important;
@@ -134,7 +134,7 @@ arahos-theme-toggle {
   margin-left: 10px !important;
   font-size: 1rem !important;
 }
-arahos-theme-toggle:hover { background: rgba(255,255,255,0.12) !important; }
+arahOS-theme-toggle:hover { background: rgba(255,255,255,0.12) !important; }
 
 /* ---------- Primary nav ---------- */
 #nav,
@@ -148,9 +148,9 @@ ul#nav {
   padding: 0 24px !important;
   height: auto !important;
   min-height: 44px !important;
-  background: var(--arahos-navy-700) !important;
+  background: var(--arahOS-navy-700) !important;
   border-top: none !important;
-  border-bottom: 1px solid var(--arahos-navy-900) !important;
+  border-bottom: 1px solid var(--arahOS-navy-900) !important;
   box-shadow: none !important;
   white-space: normal !important;
 }
@@ -172,7 +172,7 @@ ul#nav {
   padding: 10px 18px !important;
   margin: 0 !important;
   margin-left: 0 !important;
-  color: var(--arahos-white) !important;
+  color: var(--arahOS-white) !important;
   font-weight: 500 !important;
   font-size: 0.9rem !important;
   text-align: center !important;
@@ -188,15 +188,15 @@ ul#nav {
 }
 
 #nav li a:hover {
-  background: var(--arahos-navy-600) !important;
-  color: var(--arahos-gold-100) !important;
+  background: var(--arahOS-navy-600) !important;
+  color: var(--arahOS-gold-100) !important;
   background-image: none !important;
 }
 
 #nav li a.active,
 #nav li a.active:hover {
-  background: var(--arahos-gold-500) !important;
-  color: var(--arahos-navy-900) !important;
+  background: var(--arahOS-gold-500) !important;
+  color: var(--arahOS-navy-900) !important;
   font-weight: 700 !important;
   background-image: none !important;
 }
@@ -212,13 +212,13 @@ ul#nav {
 }
 
 /* Mobile hamburger (injected by JS) */
-arahos-nav-toggle {
+arahOS-nav-toggle {
   display: none !important;
   background: none !important;
   order: 4 !important;
   flex-shrink: 0 !important;
   border: none !important;
-  color: var(--arahos-white) !important;
+  color: var(--arahOS-white) !important;
   font-size: 1.6rem !important;
   cursor: pointer !important;
   padding: 8px 12px !important;
@@ -265,7 +265,7 @@ arahos-nav-toggle {
 
 #landing_page h1,
 .main-content h1 {
-  color: var(--arahos-gold-500) !important;
+  color: var(--arahOS-gold-500) !important;
   font-size: 1.6rem !important;
   font-weight: 800 !important;
   margin: 0 0 12px !important;
@@ -274,7 +274,7 @@ arahos-nav-toggle {
 
 #landing_page p,
 .main-content p {
-  color: var(--arahos-gray-700) !important;
+  color: var(--arahOS-gray-700) !important;
   font-size: 0.95rem !important;
   line-height: 1.6 !important;
 }
@@ -298,8 +298,8 @@ a.green.button,
   display: block !important;
   width: 100% !important;
   box-sizing: border-box !important;
-  background: var(--arahos-gold-500) !important;
-  color: var(--arahos-navy-900) !important;
+  background: var(--arahOS-gold-500) !important;
+  color: var(--arahOS-navy-900) !important;
   border: none !important;
   border-radius: 8px !important;
   font-size: 1rem !important;
@@ -320,8 +320,8 @@ a.blue.button:hover,
 a.green.button:hover,
 .blue.button:hover,
 .green.button:hover {
-  background: var(--arahos-gold-600) !important;
-  color: var(--arahos-navy-900) !important;
+  background: var(--arahOS-gold-600) !important;
+  color: var(--arahOS-navy-900) !important;
   text-decoration: none !important;
 }
 
@@ -330,8 +330,8 @@ a.green.button:hover,
 input[type="submit"],
 button.btn,
 a.btn {
-  background: var(--arahos-navy-700) !important;
-  color: var(--arahos-white) !important;
+  background: var(--arahOS-navy-700) !important;
+  color: var(--arahOS-white) !important;
   border: none !important;
   border-radius: 6px !important;
   padding: 10px 18px !important;
@@ -345,19 +345,19 @@ a.btn {
 }
 .btn:hover,
 input[type="submit"]:hover {
-  background: var(--arahos-navy-600) !important;
+  background: var(--arahOS-navy-600) !important;
 }
 .btn.orange,
 .btn.primary,
 button[type="submit"].orange,
 .btn-primary {
-  background: var(--arahos-gold-500) !important;
-  color: var(--arahos-navy-900) !important;
+  background: var(--arahOS-gold-500) !important;
+  color: var(--arahOS-navy-900) !important;
 }
 .btn.orange:hover,
 .btn.primary:hover,
 .btn-primary:hover {
-  background: var(--arahos-gold-600) !important;
+  background: var(--arahOS-gold-600) !important;
 }
 
 /* ---------- Forms ---------- */
@@ -367,34 +367,34 @@ input[type="password"],
 input[type="tel"],
 textarea,
 select {
-  border: 1px solid var(--arahos-gray-300) !important;
+  border: 1px solid var(--arahOS-gray-300) !important;
   border-radius: 6px !important;
   padding: 10px 12px !important;
   font-size: 1rem !important;
-  font-family: var(--arahos-font-base) !important;
+  font-family: var(--arahOS-font-base) !important;
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
   transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
   background: #fff !important;
-  color: var(--arahos-gray-900) !important;
+  color: var(--arahOS-gray-900) !important;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
   outline: none !important;
-  border-color: var(--arahos-gold-500) !important;
+  border-color: var(--arahOS-gold-500) !important;
   box-shadow: 0 0 0 3px rgba(242,169,0,0.15) !important;
 }
 
 label {
   font-weight: 600 !important;
-  color: var(--arahos-gray-700) !important;
+  color: var(--arahOS-gray-700) !important;
 }
 
 fieldset {
-  border: 1px solid var(--arahos-gray-200) !important;
+  border: 1px solid var(--arahOS-gray-200) !important;
   border-radius: 8px !important;
   padding: 16px !important;
   margin-bottom: 16px !important;
@@ -405,8 +405,8 @@ fieldset {
 .well,
 .box,
 .ticket-panel {
-  background: var(--arahos-white) !important;
-  border: 1px solid var(--arahos-gray-200) !important;
+  background: var(--arahOS-white) !important;
+  border: 1px solid var(--arahOS-gray-200) !important;
   border-radius: 10px !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06) !important;
   padding: 24px !important;
@@ -420,8 +420,8 @@ table.grid {
 }
 table.list th,
 table.grid th {
-  background: var(--arahos-navy-900) !important;
-  color: var(--arahos-white) !important;
+  background: var(--arahOS-navy-900) !important;
+  color: var(--arahOS-white) !important;
   text-align: left !important;
   padding: 10px 12px !important;
   font-size: 0.85rem !important;
@@ -430,10 +430,10 @@ table.grid th {
 table.list td,
 table.grid td {
   padding: 12px !important;
-  border-bottom: 1px solid var(--arahos-gray-100) !important;
-  color: var(--arahos-gray-900) !important;
+  border-bottom: 1px solid var(--arahOS-gray-100) !important;
+  color: var(--arahOS-gray-900) !important;
 }
-table.list tr:hover td { background: var(--arahos-gray-50) !important; }
+table.list tr:hover td { background: var(--arahOS-gray-50) !important; }
 
 /* ---------- Status badges ---------- */
 .status,
@@ -447,13 +447,13 @@ table.list tr:hover td { background: var(--arahos-gray-50) !important; }
   letter-spacing: 0.03em !important;
 }
 .status.open,
-.label-success { background: var(--arahos-st-open) !important; color: #fff !important; }
+.label-success { background: var(--arahOS-st-open) !important; color: #fff !important; }
 .status.overdue,
-.label-danger { background: var(--arahos-st-overdue) !important; color: #fff !important; }
+.label-danger { background: var(--arahOS-st-overdue) !important; color: #fff !important; }
 .status.pending,
-.label-warning { background: var(--arahos-st-pending) !important; color: #fff !important; }
+.label-warning { background: var(--arahOS-st-pending) !important; color: #fff !important; }
 .status.closed,
-.label-default { background: var(--arahos-st-closed) !important; color: #fff !important; }
+.label-default { background: var(--arahOS-st-closed) !important; color: #fff !important; }
 
 /* ---------- Footer ---------- */
 #footer {
@@ -461,27 +461,27 @@ table.list tr:hover td { background: var(--arahos-gray-50) !important; }
   width: 100% !important;
   box-sizing: border-box !important;
   clear: both !important;
-  background: var(--arahos-navy-900) !important;
-  color: var(--arahos-gray-300) !important;
+  background: var(--arahOS-navy-900) !important;
+  color: var(--arahOS-gray-300) !important;
   text-align: center !important;
   padding: 20px 24px !important;
   font-size: 0.85rem !important;
   margin: 0 !important;
   float: none !important;
-  border-top: 3px solid var(--arahos-gold-500) !important;
+  border-top: 3px solid var(--arahOS-gold-500) !important;
 }
 #footer p {
-  color: var(--arahos-gray-300) !important;
+  color: var(--arahOS-gray-300) !important;
   font-size: 0.85rem !important;
   margin: 4px 0 !important;
 }
 #footer a,
 #footer a:visited {
-  color: var(--arahos-gold-500) !important;
+  color: var(--arahOS-gold-500) !important;
   text-decoration: none !important;
 }
 #footer #arahosCredit {
-  color: var(--arahos-gold-500) !important;
+  color: var(--arahOS-gold-500) !important;
   font-size: 0.8rem !important;
   font-weight: 600 !important;
   letter-spacing: 0.02em !important;
@@ -492,24 +492,24 @@ table.list tr:hover td { background: var(--arahos-gray-50) !important; }
 }
 
 /* ---------- Links ---------- */
-a { color: var(--arahos-gold-500) !important; text-decoration: none !important; }
+a { color: var(--arahOS-gold-500) !important; text-decoration: none !important; }
 a:hover { color: #ffffff !important; }
 
 /* ---------- Skip link (accessibility) ---------- */
-arahos-skip-link {
+arahOS-skip-link {
   position: absolute !important;
   left: -9999px !important;
   top: 0 !important;
-  background: var(--arahos-gold-500) !important;
-  color: var(--arahos-navy-900) !important;
+  background: var(--arahOS-gold-500) !important;
+  color: var(--arahOS-navy-900) !important;
   padding: 12px 20px !important;
   font-weight: 700 !important;
   z-index: 9999 !important;
   border-radius: 0 0 6px 0 !important;
 }
-arahos-skip-link:focus { left: 0 !important; }
+arahOS-skip-link:focus { left: 0 !important; }
 
-/* ---------- ARAHOS credit line (footer) ---------- */
+/* ---------- arahOS credit line (footer) ---------- */
 /* (styled above in #footer #arahosCredit) */
 
 /* ============================================================
@@ -527,12 +527,12 @@ arahos-skip-link:focus { left: 0 !important; }
     left: 0 !important;
     right: 0 !important;
     z-index: 999 !important;
-    background: var(--arahos-navy-800) !important;
+    background: var(--arahOS-navy-800) !important;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
     padding: 0 !important;
   }
-  #navarahos-nav-open,
-  ul#navarahos-nav-open { display: flex !important; }
+  #navarahOS-nav-open,
+  ul#navarahOS-nav-open { display: flex !important; }
   #nav li { width: 100% !important; }
   #nav li a {
     width: 100% !important;
@@ -541,7 +541,7 @@ arahos-skip-link:focus { left: 0 !important; }
     text-align: left !important;
   }
 
-  arahos-nav-toggle {
+  arahOS-nav-toggle {
     display: inline-block !important;
     margin-left: auto !important;
   }
@@ -569,7 +569,7 @@ arahos-skip-link:focus { left: 0 !important; }
   table.list tr, table.grid tr {
     display: block !important;
     margin-bottom: 12px !important;
-    border: 1px solid var(--arahos-gray-200) !important;
+    border: 1px solid var(--arahOS-gray-200) !important;
     border-radius: 8px !important;
     overflow: hidden !important;
   }
@@ -579,12 +579,12 @@ arahos-skip-link:focus { left: 0 !important; }
     align-items: center !important;
     text-align: right !important;
     padding: 10px 14px !important;
-    border-bottom: 1px solid var(--arahos-gray-100) !important;
+    border-bottom: 1px solid var(--arahOS-gray-100) !important;
   }
   table.list td::before, table.grid td::before {
     content: attr(data-label) !important;
     font-weight: 700 !important;
-    color: var(--arahos-gray-700) !important;
+    color: var(--arahOS-gray-700) !important;
     text-align: left !important;
     margin-right: 12px !important;
   }
@@ -643,7 +643,7 @@ arahos-skip-link:focus { left: 0 !important; }
 
 /* Print */
 @media print {
-  #header, #nav, #footer, arahos-nav-toggle { display: none !important; }
+  #header, #nav, #footer, arahOS-nav-toggle { display: none !important; }
   #container { box-shadow: none !important; max-width: 100% !important; }
 }
 
@@ -657,9 +657,9 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
 input[type="search"], input[type="number"], input[type="url"], input:not([type]),
 textarea, select {
   background: #ffffff !important;
-  color: var(--arahos-gray-900) !important;
-  border: 1px solid var(--arahos-gray-300) !important;
-  border-radius: var(--arahos-radius-md) !important;
+  color: var(--arahOS-gray-900) !important;
+  border: 1px solid var(--arahOS-gray-300) !important;
+  border-radius: var(--arahOS-radius-md) !important;
   padding: 10px 12px !important;
   font-size: 0.95rem !important;
   transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
@@ -667,19 +667,19 @@ textarea, select {
 [data-theme="dark"] input[type="text"], [data-theme="dark"] input[type="email"], [data-theme="dark"] input[type="tel"], [data-theme="dark"] input[type="password"],
 [data-theme="dark"] input[type="search"], [data-theme="dark"] input[type="number"], [data-theme="dark"] input[type="url"], [data-theme="dark"] input:not([type]),
 [data-theme="dark"] textarea, [data-theme="dark"] select,
-bodyarahos-dark input[type="text"], bodyarahos-dark input[type="email"], bodyarahos-dark input[type="tel"], bodyarahos-dark input[type="password"],
-bodyarahos-dark input[type="search"], bodyarahos-dark input[type="number"], bodyarahos-dark input[type="url"], bodyarahos-dark input:not([type]),
-bodyarahos-dark textarea, bodyarahos-dark select {
+bodyarahOS-dark input[type="text"], bodyarahOS-dark input[type="email"], bodyarahOS-dark input[type="tel"], bodyarahOS-dark input[type="password"],
+bodyarahOS-dark input[type="search"], bodyarahOS-dark input[type="number"], bodyarahOS-dark input[type="url"], bodyarahOS-dark input:not([type]),
+bodyarahOS-dark textarea, bodyarahOS-dark select {
   background: rgba(255,255,255,0.06) !important;
   color: #eef0f3 !important;
-  border: 1px solid var(--arahos-gray-300) !important;
-  border-radius: var(--arahos-radius-md) !important;
+  border: 1px solid var(--arahOS-gray-300) !important;
+  border-radius: var(--arahOS-radius-md) !important;
   padding: 10px 12px !important;
   font-size: 0.95rem !important;
   transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
 }
 input:focus, textarea:focus, select:focus {
-  border-color: var(--arahos-gold-500) !important;
+  border-color: var(--arahOS-gold-500) !important;
   box-shadow: 0 0 0 3px rgba(242,169,0,0.3) !important;
   outline: none !important;
 }
@@ -698,73 +698,73 @@ select {
   padding-right: 32px !important;
 }
 
-/* All h1 — force ARAHOS gold (overrides various osTicket blue rules) */
-h1 { color: var(--arahos-gold-500) !important; }
-.main-content h1, #content h1, #landing_page h1 { color: var(--arahos-gold-500) !important; }
+/* All h1 — force arahOS gold (overrides various osTicket blue rules) */
+h1 { color: var(--arahOS-gold-500) !important; }
+.main-content h1, #content h1, #landing_page h1 { color: var(--arahOS-gold-500) !important; }
 
 /* h2/h3 — softer light */
-h2, h3 { color: var(--arahos-gray-900) !important; }
+h2, h3 { color: var(--arahOS-gray-900) !important; }
 
 /* Labels / form-labels */
-label, th, .form-label, .field-label { color: var(--arahos-gray-700) !important; }
+label, th, .form-label, .field-label { color: var(--arahOS-gray-700) !important; }
 [data-theme="dark"] label, [data-theme="dark"] th, [data-theme="dark"] .form-label, [data-theme="dark"] .field-label,
-bodyarahos-dark label, bodyarahos-dark th, bodyarahos-dark .form-label, bodyarahos-dark .field-label { color: var(--arahos-gray-300) !important; }
+bodyarahOS-dark label, bodyarahOS-dark th, bodyarahOS-dark .form-label, bodyarahOS-dark .field-label { color: var(--arahOS-gray-300) !important; }
 
 /* All buttons: solid navy w/ gold hover */
 button, input[type="submit"], input[type="reset"], input[type="button"], .btn, .button {
-  background: var(--arahos-navy-700) !important;
+  background: var(--arahOS-navy-700) !important;
   color: #ffffff !important;
-  border: 1px solid var(--arahos-navy-700) !important;
-  border-radius: var(--arahos-radius-md) !important;
+  border: 1px solid var(--arahOS-navy-700) !important;
+  border-radius: var(--arahOS-radius-md) !important;
   padding: 10px 18px !important;
   font-weight: 600 !important;
   cursor: pointer !important;
   transition: background 0.15s ease, border-color 0.15s ease !important;
 }
 button:hover, input[type="submit"]:hover, .btn:hover {
-  background: var(--arahos-gold-500) !important;
-  color: var(--arahos-navy-900) !important;
-  border-color: var(--arahos-gold-500) !important;
+  background: var(--arahOS-gold-500) !important;
+  color: var(--arahOS-navy-900) !important;
+  border-color: var(--arahOS-gold-500) !important;
 }
 
 /* Primary CTA (Open New Ticket, etc) — keep the gold treatment */
 .action-button, .primary, a.btn-primary {
-  background: var(--arahos-gold-500) !important;
-  color: var(--arahos-navy-900) !important;
+  background: var(--arahOS-gold-500) !important;
+  color: var(--arahOS-navy-900) !important;
   border: none !important;
 }
 .action-button:hover, .primary:hover, a.btn-primary:hover {
-  background: var(--arahos-gold-600) !important;
-  color: var(--arahos-navy-900) !important;
+  background: var(--arahOS-gold-600) !important;
+  color: var(--arahOS-navy-900) !important;
 }
 
 /* Tables / form layout */
 table, th, td {
   background: transparent !important;
-  color: var(--arahos-gray-900) !important;
-  border-color: var(--arahos-gray-200) !important;
+  color: var(--arahOS-gray-900) !important;
+  border-color: var(--arahOS-gray-200) !important;
 }
 [data-theme="dark"] table, [data-theme="dark"] th, [data-theme="dark"] td,
-bodyarahos-dark table, bodyarahos-dark th, bodyarahos-dark td {
-  color: var(--arahos-gray-300) !important;
+bodyarahOS-dark table, bodyarahOS-dark th, bodyarahOS-dark td {
+  color: var(--arahOS-gray-300) !important;
 }
 table.form th, table.form td {
   background: transparent !important;
-  color: var(--arahos-gray-900) !important;
+  color: var(--arahOS-gray-900) !important;
 }
 
 /* Required asterisk */
-.red, .required, strong.required { color: var(--arahos-gold-500) !important; }
+.red, .required, strong.required { color: var(--arahOS-gold-500) !important; }
 
 /* Page footer */
 #footer {
   background: #0E1117 !important;
-  color: var(--arahos-gray-300) !important;
+  color: var(--arahOS-gray-300) !important;
   padding: 16px 24px !important;
-  border-top: 3px solid var(--arahos-gold-500) !important;
+  border-top: 3px solid var(--arahOS-gold-500) !important;
 }
-#footer a { color: var(--arahos-gold-100) !important; }
-#footer a:hover { color: var(--arahos-gold-500) !important; }
+#footer a { color: var(--arahOS-gold-100) !important; }
+#footer a:hover { color: var(--arahOS-gold-500) !important; }
 
 /* ============================================================
    FULL-WIDTH LAYOUT — kill max-width cap + gutters
@@ -860,7 +860,7 @@ body.auth-page #content {
 
 /* Right = hero system status */
 #auth-right {
-  background: url("images/arahos/arahos-bg.jpg") center/cover no-repeat, linear-gradient(135deg, #1c3d63 0%, #245380 100%);
+  background: url("images/arahOS/arahOS-bg.jpg") center/cover no-repeat, linear-gradient(135deg, #1c3d63 0%, #245380 100%);
   background-blend-mode: overlay;
   min-height: 100vh;
   display: flex;
@@ -1133,39 +1133,39 @@ body.auth-page .btn.btn-primary {
 
 
 /* ============================================================
-   ARAHOS v2 contrast patch — tokens are dark-themed but the
+   arahOS v2 contrast patch — tokens are dark-themed but the
    portal shows on a light background. Force readable dark text.
    ============================================================ */
-html:not([data-theme="dark"]) body:not(arahos-dark) #landing_page p,
-html:not([data-theme="dark"]) body:not(arahos-dark) .main-content p,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content p,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content li,
-html:not([data-theme="dark"]) body:not(arahos-dark) .main-content li,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content td {
+html:not([data-theme="dark"]) body:not(arahOS-dark) #landing_page p,
+html:not([data-theme="dark"]) body:not(arahOS-dark) .main-content p,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content p,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content li,
+html:not([data-theme="dark"]) body:not(arahOS-dark) .main-content li,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content td {
   color: #1f2937 !important;
 }
-html:not([data-theme="dark"]) body:not(arahos-dark) #content,
-html:not([data-theme="dark"]) body:not(arahos-dark) .main-content {
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content,
+html:not([data-theme="dark"]) body:not(arahOS-dark) .main-content {
   color: #1f2937 !important;
 }
-html:not([data-theme="dark"]) body:not(arahos-dark) #content a,
-html:not([data-theme="dark"]) body:not(arahos-dark) .main-content a {
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content a,
+html:not([data-theme="dark"]) body:not(arahOS-dark) .main-content a {
   color: #163a70 !important;
 }
-html:not([data-theme="dark"]) body:not(arahos-dark) #content a:hover,
-html:not([data-theme="dark"]) body:not(arahos-dark) .main-content a:hover {
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content a:hover,
+html:not([data-theme="dark"]) body:not(arahOS-dark) .main-content a:hover {
   color: #b9820a !important;
 }
 /* Sidebar / info card text */
-html:not([data-theme="dark"]) body:not(arahos-dark) #landing_page .sidebar,
-html:not([data-theme="dark"]) body:not(arahos-dark) #landing_page .sidebar p,
-html:not([data-theme="dark"]) body:not(arahos-dark) #landing_page .sidebar li {
+html:not([data-theme="dark"]) body:not(arahOS-dark) #landing_page .sidebar,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #landing_page .sidebar p,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #landing_page .sidebar li {
   color: #1f2937 !important;
 }
 
 
 /* ============================================================
-   ARAHOS v3 patch — Client nav tab contrast + show osTicket credit
+   arahOS v3 patch — Client nav tab contrast + show osTicket credit
    ============================================================ */
 
 /* Nav bar tabs: navy background needs LIGHT text (was dark/unreadable) */
@@ -1187,8 +1187,8 @@ ul#nav li a:hover {
 #nav li.active a,
 #nav li a.active,
 #nav.flush-left li.active a {
-  background: var(--arahos-gold-500, #f2a900) !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+  background: var(--arahOS-gold-500, #f2a900) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
   font-weight: 700 !important;
 }
 
@@ -1200,31 +1200,31 @@ ul#nav li a:hover {
 
 
 /* ============================================================
-   ARAHOS v4 — Knowledgebase / FAQ readability
+   arahOS v4 — Knowledgebase / FAQ readability
    ============================================================ */
-html:not([data-theme="dark"]) body:not(arahos-dark) #kb-container a,
-html:not([data-theme="dark"]) body:not(arahos-dark) .kb-category a,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content .faq a,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content ul li a,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content .article a,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content a:visited {
+html:not([data-theme="dark"]) body:not(arahOS-dark) #kb-container a,
+html:not([data-theme="dark"]) body:not(arahOS-dark) .kb-category a,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content .faq a,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content ul li a,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content .article a,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content a:visited {
   color: #163a70 !important;
 }
-html:not([data-theme="dark"]) body:not(arahos-dark) #content a:visited { color: #163a70 !important; }
-html:not([data-theme="dark"]) body:not(arahos-dark) #content a:hover { color: #b9820a !important; }
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content a:visited { color: #163a70 !important; }
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content a:hover { color: #b9820a !important; }
 
 /* Category description + intro text darker */
-html:not([data-theme="dark"]) body:not(arahos-dark) #content .faded,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content .description,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content small,
-html:not([data-theme="dark"]) body:not(arahos-dark) .kb-category .description {
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content .faded,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content .description,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content small,
+html:not([data-theme="dark"]) body:not(arahOS-dark) .kb-category .description {
   color: #4b5563 !important;
 }
 
 /* FAQ article body text readable */
-html:not([data-theme="dark"]) body:not(arahos-dark) #content .thread-body,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content .article-content,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content .faq-content { color: #1f2937 !important; }
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content .thread-body,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content .article-content,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content .faq-content { color: #1f2937 !important; }
 
 /* ============================================================
    Agent login callout on client Check-Ticket page
@@ -1237,43 +1237,43 @@ html:not([data-theme="dark"]) body:not(arahos-dark) #content .faq-content { colo
   margin-top: 18px !important;
   padding: 14px 18px !important;
   background: #ffffff !important;
-  border: 1px solid var(--arahos-gray-200) !important;
-  border-left: 4px solid var(--arahos-gold-500) !important;
-  border-radius: var(--arahos-radius-md) !important;
+  border: 1px solid var(--arahOS-gray-200) !important;
+  border-left: 4px solid var(--arahOS-gold-500) !important;
+  border-radius: var(--arahOS-radius-md) !important;
 }
 .agent-login-note span {
-  color: var(--arahos-gray-700) !important;
+  color: var(--arahOS-gray-700) !important;
   font-size: 0.95rem !important;
 }
-html:not([data-theme="dark"]) body:not(arahos-dark) #content a.agent-login-btn,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content .agent-login-btn,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content a.agent-login-btn,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content .agent-login-btn,
 body #content a.agent-login-btn,
 .agent-login-btn {
   display: inline-flex !important;
   align-items: center !important;
-  background: var(--arahos-navy-700) !important;
+  background: var(--arahOS-navy-700) !important;
   color: #ffffff !important;
   font-weight: 600 !important;
   text-decoration: none !important;
   padding: 10px 18px !important;
-  border-radius: var(--arahos-radius-md) !important;
-  border: 1px solid var(--arahos-navy-700) !important;
+  border-radius: var(--arahOS-radius-md) !important;
+  border: 1px solid var(--arahOS-navy-700) !important;
   transition: background 0.15s ease !important;
 }
 body #content a.agent-login-btn:visited,
-html:not([data-theme="dark"]) body:not(arahos-dark) #content a.agent-login-btn:visited {
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content a.agent-login-btn:visited {
   color: #ffffff !important;
 }
 .agent-login-btn:hover {
-  background: var(--arahos-gold-500) !important;
-  color: var(--arahos-navy-900) !important;
-  border-color: var(--arahos-gold-500) !important;
+  background: var(--arahOS-gold-500) !important;
+  color: var(--arahOS-navy-900) !important;
+  border-color: var(--arahOS-gold-500) !important;
 }
 
 /* ============================================================
-   ARAHOS PWA — Install banner + iOS help styles
+   arahOS PWA — Install banner + iOS help styles
    ============================================================ */
-#arahos-install-banner {
+#arahOS-install-banner {
   position: fixed !important;
   bottom: 16px !important;
   left: 16px !important;
@@ -1282,37 +1282,37 @@ html:not([data-theme="dark"]) body:not(arahos-dark) #content a.agent-login-btn:v
   display: flex !important;
   align-items: center !important;
   gap: 12px !important;
-  background: var(--arahos-navy-900, #0a1f44) !important;
+  background: var(--arahOS-navy-900, #0a1f44) !important;
   color: #ffffff !important;
   padding: 12px 16px !important;
   border-radius: 14px !important;
-  border-top: 3px solid var(--arahos-gold-500, #f2a900) !important;
+  border-top: 3px solid var(--arahOS-gold-500, #f2a900) !important;
   box-shadow: 0 10px 30px rgba(10, 31, 68, 0.45) !important;
   max-width: 480px !important;
   margin: 0 auto !important;
-  font-family: var(--arahos-font-base, -apple-system, "Segoe UI", Roboto, sans-serif) !important;
+  font-family: var(--arahOS-font-base, -apple-system, "Segoe UI", Roboto, sans-serif) !important;
 }
-#arahos-install-banner .vib-icon {
+#arahOS-install-banner .vib-icon {
   width: 44px !important;
   height: 44px !important;
   border-radius: 10px !important;
   flex-shrink: 0 !important;
 }
-#arahos-install-banner .vib-text {
+#arahOS-install-banner .vib-text {
   flex: 1 !important;
   display: flex !important;
   flex-direction: column !important;
   min-width: 0 !important;
 }
-#arahos-install-banner .vib-text strong { font-size: 0.95rem !important; }
-#arahos-install-banner .vib-text span {
+#arahOS-install-banner .vib-text strong { font-size: 0.95rem !important; }
+#arahOS-install-banner .vib-text span {
   font-size: 0.8rem !important;
   color: #c3c9d1 !important;
   line-height: 1.25 !important;
 }
-#arahos-install-banner .vib-install {
-  background: var(--arahos-gold-500, #f2a900) !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+#arahOS-install-banner .vib-install {
+  background: var(--arahOS-gold-500, #f2a900) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
   font-weight: 700 !important;
   border: none !important;
   padding: 9px 16px !important;
@@ -1322,7 +1322,7 @@ html:not([data-theme="dark"]) body:not(arahos-dark) #content a.agent-login-btn:v
   font-size: 0.88rem !important;
   flex-shrink: 0 !important;
 }
-#arahos-install-banner .vib-close {
+#arahOS-install-banner .vib-close {
   background: transparent !important;
   border: none !important;
   color: #c3c9d1 !important;
@@ -1332,15 +1332,15 @@ html:not([data-theme="dark"]) body:not(arahos-dark) #content a.agent-login-btn:v
   padding: 4px 8px !important;
   flex-shrink: 0 !important;
 }
-#arahos-install-banner .vib-close:hover { color: #ffffff !important; }
+#arahOS-install-banner .vib-close:hover { color: #ffffff !important; }
 
 @media (max-width: 480px) {
-  #arahos-install-banner { left: 8px !important; right: 8px !important; bottom: 8px !important; padding: 10px 12px !important; }
-  #arahos-install-banner .vib-text span { display: none !important; }
+  #arahOS-install-banner { left: 8px !important; right: 8px !important; bottom: 8px !important; padding: 10px 12px !important; }
+  #arahOS-install-banner .vib-text span { display: none !important; }
 }
 
 /* iOS install help modal */
-arahos-ios-help {
+arahOS-ios-help {
   position: fixed !important;
   inset: 0 !important;
   z-index: 1300 !important;
@@ -1350,22 +1350,22 @@ arahos-ios-help {
   justify-content: center !important;
   padding: 20px !important;
 }
-arahos-ios-card {
+arahOS-ios-card {
   background: #ffffff !important;
-  color: var(--arahos-gray-900, #111827) !important;
+  color: var(--arahOS-gray-900, #111827) !important;
   border-radius: 14px !important;
-  border-top: 4px solid var(--arahos-gold-500, #f2a900) !important;
+  border-top: 4px solid var(--arahOS-gold-500, #f2a900) !important;
   max-width: 360px !important;
   width: 100% !important;
   padding: 24px !important;
   box-shadow: 0 20px 50px rgba(0,0,0,0.4) !important;
 }
-arahos-ios-card h3 { margin: 0 0 12px !important; color: var(--arahos-navy-900, #0a1f44) !important; }
-arahos-ios-card ol { margin: 0 0 18px 18px !important; color: var(--arahos-gray-700, #374151) !important; line-height: 1.6 !important; }
-arahos-ios-card .ios-share { display: inline-block; background: #eef1f5; padding: 0 6px; border-radius: 4px; }
-arahos-ios-card .vib-install {
+arahOS-ios-card h3 { margin: 0 0 12px !important; color: var(--arahOS-navy-900, #0a1f44) !important; }
+arahOS-ios-card ol { margin: 0 0 18px 18px !important; color: var(--arahOS-gray-700, #374151) !important; line-height: 1.6 !important; }
+arahOS-ios-card .ios-share { display: inline-block; background: #eef1f5; padding: 0 6px; border-radius: 4px; }
+arahOS-ios-card .vib-install {
   width: 100% !important;
-  background: var(--arahos-navy-700, #163a70) !important;
+  background: var(--arahOS-navy-700, #163a70) !important;
   color: #ffffff !important;
   font-weight: 700 !important;
   border: none !important;
@@ -1376,31 +1376,31 @@ arahos-ios-card .vib-install {
 }
 
 /* ============================================================
-   ARAHOS — Landing page hero + Front Page FAQ accordion
+   arahOS — Landing page hero + Front Page FAQ accordion
    ============================================================ */
 
 /* Hero banner */
-arahos-hero {
-  background: linear-gradient(135deg, var(--arahos-navy-900, #0a1f44) 0%, var(--arahos-navy-700, #163a70) 100%) !important;
-  border-bottom: 3px solid var(--arahos-gold-500, #f2a900) !important;
+arahOS-hero {
+  background: linear-gradient(135deg, var(--arahOS-navy-900, #0a1f44) 0%, var(--arahOS-navy-700, #163a70) 100%) !important;
+  border-bottom: 3px solid var(--arahOS-gold-500, #f2a900) !important;
   padding: 48px 24px 40px !important;
   margin: 0 0 32px 0 !important;
 }
-arahos-hero-inner { max-width: 760px !important; margin: 0 auto !important; text-align: center !important; }
-arahos-hero-title {
+arahOS-hero-inner { max-width: 760px !important; margin: 0 auto !important; text-align: center !important; }
+arahOS-hero-title {
   color: #ffffff !important;
   font-size: 2rem !important;
   font-weight: 700 !important;
   margin: 0 0 10px !important;
   line-height: 1.2 !important;
 }
-arahos-hero-sub {
+arahOS-hero-sub {
   color: #c3c9d1 !important;
   font-size: 1.05rem !important;
   margin: 0 0 26px !important;
   line-height: 1.5 !important;
 }
-arahos-hero-search {
+arahOS-hero-search {
   display: flex !important;
   max-width: 560px !important;
   margin: 0 auto 20px !important;
@@ -1409,19 +1409,19 @@ arahos-hero-search {
   overflow: hidden !important;
   box-shadow: 0 8px 24px rgba(0,0,0,0.22) !important;
 }
-arahos-hero-input {
+arahOS-hero-input {
   flex: 1 !important;
   border: none !important;
   background: transparent !important;
   padding: 14px 20px !important;
   font-size: 1rem !important;
-  color: var(--arahos-gray-900, #111827) !important;
+  color: var(--arahOS-gray-900, #111827) !important;
   min-width: 0 !important;
 }
-arahos-hero-input:focus { outline: none !important; }
-arahos-hero-btn {
-  background: var(--arahos-gold-500, #f2a900) !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+arahOS-hero-input:focus { outline: none !important; }
+arahOS-hero-btn {
+  background: var(--arahOS-gold-500, #f2a900) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
   font-weight: 700 !important;
   border: none !important;
   padding: 14px 28px !important;
@@ -1430,11 +1430,11 @@ arahos-hero-btn {
   flex-shrink: 0 !important;
   border-radius: 0 !important;
 }
-arahos-hero-btn:hover { background: var(--arahos-gold-600, #d69400) !important; }
+arahOS-hero-btn:hover { background: var(--arahOS-gold-600, #d69400) !important; }
 
 /* Hero action buttons */
-arahos-hero-actions { display: flex !important; gap: 12px !important; justify-content: center !important; flex-wrap: wrap !important; }
-arahos-cta {
+arahOS-hero-actions { display: flex !important; gap: 12px !important; justify-content: center !important; flex-wrap: wrap !important; }
+arahOS-cta {
   display: inline-flex !important;
   align-items: center !important;
   text-decoration: none !important;
@@ -1445,20 +1445,20 @@ arahos-cta {
   transition: all 0.15s ease !important;
   border: 2px solid transparent !important;
 }
-arahos-cta-gold {
-  background: var(--arahos-gold-500, #f2a900) !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+arahOS-cta-gold {
+  background: var(--arahOS-gold-500, #f2a900) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
 }
-arahos-cta-gold:hover { background: var(--arahos-gold-600, #d69400) !important; }
-arahos-cta-outline {
+arahOS-cta-gold:hover { background: var(--arahOS-gold-600, #d69400) !important; }
+arahOS-cta-outline {
   background: transparent !important;
   color: #ffffff !important;
   border-color: rgba(255,255,255,0.5) !important;
 }
-arahos-cta-outline:hover { border-color: #ffffff !important; background: rgba(255,255,255,0.1) !important; }
+arahOS-cta-outline:hover { border-color: #ffffff !important; background: rgba(255,255,255,0.1) !important; }
 
 /* Landing content grid (main + aside) */
-arahos-content-grid {
+arahOS-content-grid {
   display: grid !important;
   grid-template-columns: 1fr 340px !important;
   gap: 28px !important;
@@ -1467,53 +1467,53 @@ arahos-content-grid {
   margin: 0 auto !important;
   padding: 0 24px !important;
 }
-arahos-content-main { min-width: 0 !important; }
-arahos-content-aside { min-width: 0 !important; }
+arahOS-content-main { min-width: 0 !important; }
+arahOS-content-aside { min-width: 0 !important; }
 @media (max-width: 900px) {
-  arahos-content-grid { grid-template-columns: 1fr !important; }
+  arahOS-content-grid { grid-template-columns: 1fr !important; }
 }
 
 /* Formatted intro text */
-arahos-intro { max-width: 720px !important; }
-arahos-intro h1, arahos-intro h2 {
-  color: var(--arahos-navy-900, #0a1f44) !important;
+arahOS-intro { max-width: 720px !important; }
+arahOS-intro h1, arahOS-intro h2 {
+  color: var(--arahOS-navy-900, #0a1f44) !important;
   font-size: 1.5rem !important;
   margin: 0 0 14px !important;
 }
-arahos-intro p {
-  color: var(--arahos-gray-700, #374151) !important;
+arahOS-intro p {
+  color: var(--arahOS-gray-700, #374151) !important;
   font-size: 1rem !important;
   line-height: 1.65 !important;
   margin: 0 0 14px !important;
 }
-arahos-intro a { color: var(--arahos-navy-600, #1e4c8f) !important; font-weight: 600 !important; }
-arahos-intro a:hover { color: var(--arahos-gold-600, #d69400) !important; }
-arahos-intro strong { color: var(--arahos-navy-900, #0a1f44) !important; }
+arahOS-intro a { color: var(--arahOS-navy-600, #1e4c8f) !important; font-weight: 600 !important; }
+arahOS-intro a:hover { color: var(--arahOS-gold-600, #d69400) !important; }
+arahOS-intro strong { color: var(--arahOS-navy-900, #0a1f44) !important; }
 
 /* Front Page FAQ accordion */
-arahos-frontpage {
+arahOS-frontpage {
   max-width: 860px !important;
   margin: 40px auto 32px !important;
   padding: 0 24px !important;
 }
-arahos-frontpage-head { text-align: center !important; margin-bottom: 20px !important; }
-arahos-frontpage-head h2 {
-  color: var(--arahos-navy-900, #0a1f44) !important;
+arahOS-frontpage-head { text-align: center !important; margin-bottom: 20px !important; }
+arahOS-frontpage-head h2 {
+  color: var(--arahOS-navy-900, #0a1f44) !important;
   font-size: 1.5rem !important;
   margin: 0 0 6px !important;
 }
-arahos-frontpage-head p { color: var(--arahos-gray-500, #6b7280) !important; font-size: 0.95rem !important; margin: 0 !important; }
+arahOS-frontpage-head p { color: var(--arahOS-gray-500, #6b7280) !important; font-size: 0.95rem !important; margin: 0 !important; }
 
-arahos-accordion {
+arahOS-accordion {
   background: #ffffff !important;
-  border: 1px solid var(--arahos-gray-200, #e5e7eb) !important;
+  border: 1px solid var(--arahOS-gray-200, #e5e7eb) !important;
   border-radius: 12px !important;
   overflow: hidden !important;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05) !important;
 }
-arahos-acc-item { border-bottom: 1px solid var(--arahos-gray-100, #eef1f5) !important; }
-arahos-acc-item:last-child { border-bottom: none !important; }
-arahos-acc-toggle {
+arahOS-acc-item { border-bottom: 1px solid var(--arahOS-gray-100, #eef1f5) !important; }
+arahOS-acc-item:last-child { border-bottom: none !important; }
+arahOS-acc-toggle {
   width: 100% !important;
   display: flex !important;
   align-items: center !important;
@@ -1526,89 +1526,89 @@ arahos-acc-toggle {
   cursor: pointer !important;
   transition: background 0.12s ease !important;
 }
-arahos-acc-toggle:hover { background: var(--arahos-gray-50, #f7f8fa) !important; }
-arahos-acc-q {
-  color: var(--arahos-navy-800, #102a56) !important;
+arahOS-acc-toggle:hover { background: var(--arahOS-gray-50, #f7f8fa) !important; }
+arahOS-acc-q {
+  color: var(--arahOS-navy-800, #102a56) !important;
   font-size: 1rem !important;
   font-weight: 600 !important;
   flex: 1 !important;
 }
-arahos-acc-chevron {
-  color: var(--arahos-gold-600, #d69400) !important;
+arahOS-acc-chevron {
+  color: var(--arahOS-gold-600, #d69400) !important;
   font-size: 1rem !important;
   transition: transform 0.18s ease !important;
   flex-shrink: 0 !important;
 }
-arahos-acc-item.open arahos-acc-chevron { transform: rotate(180deg) !important; }
-arahos-acc-item.open arahos-acc-toggle { background: var(--arahos-gray-50, #f7f8fa) !important; }
-arahos-acc-body {
+arahOS-acc-item.open arahOS-acc-chevron { transform: rotate(180deg) !important; }
+arahOS-acc-item.open arahOS-acc-toggle { background: var(--arahOS-gray-50, #f7f8fa) !important; }
+arahOS-acc-body {
   padding: 0 20px 18px !important;
-  border-top: 1px dashed var(--arahos-gray-200, #e5e7eb) !important;
+  border-top: 1px dashed var(--arahOS-gray-200, #e5e7eb) !important;
 }
-arahos-acc-answer {
+arahOS-acc-answer {
   padding: 16px 0 10px !important;
-  color: var(--arahos-gray-700, #374151) !important;
+  color: var(--arahOS-gray-700, #374151) !important;
   font-size: 0.95rem !important;
   line-height: 1.65 !important;
 }
-arahos-acc-answer p { margin: 0 0 10px !important; }
-arahos-acc-link {
+arahOS-acc-answer p { margin: 0 0 10px !important; }
+arahOS-acc-link {
   display: inline-flex !important;
-  color: var(--arahos-navy-600, #1e4c8f) !important;
+  color: var(--arahOS-navy-600, #1e4c8f) !important;
   font-weight: 600 !important;
   font-size: 0.9rem !important;
   text-decoration: none !important;
 }
-arahos-acc-link:hover { color: var(--arahos-gold-600, #d69400) !important; text-decoration: underline !important; }
+arahOS-acc-link:hover { color: var(--arahOS-gold-600, #d69400) !important; text-decoration: underline !important; }
 
 /* Dark mode variants */
-[data-theme="dark"] arahos-accordion,
-bodyarahos-dark arahos-accordion { background: #1b202a !important; border-color: #293142 !important; }
-[data-theme="dark"] arahos-acc-toggle,
-bodyarahos-dark arahos-acc-toggle { background: #1b202a !important; }
-[data-theme="dark"] arahos-acc-toggle:hover,
-bodyarahos-dark arahos-acc-toggle:hover { background: #293142 !important; }
-[data-theme="dark"] arahos-acc-q,
-bodyarahos-dark arahos-acc-q { color: #eef0f3 !important; }
-[data-theme="dark"] arahos-acc-answer,
-bodyarahos-dark arahos-acc-answer { color: #c3c9d1 !important; }
-[data-theme="dark"] arahos-acc-body,
-bodyarahos-dark arahos-acc-body { border-top-color: #293142 !important; }
+[data-theme="dark"] arahOS-accordion,
+bodyarahOS-dark arahOS-accordion { background: #1b202a !important; border-color: #293142 !important; }
+[data-theme="dark"] arahOS-acc-toggle,
+bodyarahOS-dark arahOS-acc-toggle { background: #1b202a !important; }
+[data-theme="dark"] arahOS-acc-toggle:hover,
+bodyarahOS-dark arahOS-acc-toggle:hover { background: #293142 !important; }
+[data-theme="dark"] arahOS-acc-q,
+bodyarahOS-dark arahOS-acc-q { color: #eef0f3 !important; }
+[data-theme="dark"] arahOS-acc-answer,
+bodyarahOS-dark arahOS-acc-answer { color: #c3c9d1 !important; }
+[data-theme="dark"] arahOS-acc-body,
+bodyarahOS-dark arahOS-acc-body { border-top-color: #293142 !important; }
 
 /* ============================================================
-   ARAHOS — Hero contrast fix (subtitle + outline CTA on navy)
+   arahOS — Hero contrast fix (subtitle + outline CTA on navy)
    ============================================================ */
-arahos-hero arahos-hero-sub,
-html:not([data-theme="dark"]) arahos-hero arahos-hero-sub,
-body:not(arahos-dark) arahos-hero arahos-hero-sub {
+arahOS-hero arahOS-hero-sub,
+html:not([data-theme="dark"]) arahOS-hero arahOS-hero-sub,
+body:not(arahOS-dark) arahOS-hero arahOS-hero-sub {
   color: #d6dde8 !important;
 }
 
-arahos-hero arahos-cta-outline,
-html:not([data-theme="dark"]) arahos-hero arahos-cta-outline,
-body:not(arahos-dark) arahos-hero arahos-cta-outline {
+arahOS-hero arahOS-cta-outline,
+html:not([data-theme="dark"]) arahOS-hero arahOS-cta-outline,
+body:not(arahOS-dark) arahOS-hero arahOS-cta-outline {
   background: transparent !important;
   color: #ffffff !important;
   border-color: rgba(255,255,255,0.55) !important;
 }
-arahos-hero arahos-cta-outline:hover,
-html:not([data-theme="dark"]) arahos-hero arahos-cta-outline:hover,
-body:not(arahos-dark) arahos-hero arahos-cta-outline:hover {
+arahOS-hero arahOS-cta-outline:hover,
+html:not([data-theme="dark"]) arahOS-hero arahOS-cta-outline:hover,
+body:not(arahOS-dark) arahOS-hero arahOS-cta-outline:hover {
   background: rgba(255,255,255,0.12) !important;
   color: #ffffff !important;
   border-color: #ffffff !important;
 }
 
 /* Keep the gold CTA readable too */
-arahos-hero arahos-cta-gold {
-  color: var(--arahos-navy-900, #0a1f44) !important;
+arahOS-hero arahOS-cta-gold {
+  color: var(--arahOS-navy-900, #0a1f44) !important;
 }
 
 /* ============================================================
-   ARAHOS — Landing 3-column layout
+   arahOS — Landing 3-column layout
    Left: buttons + system status | Center: intro | Right: FAQ
    ============================================================ */
-arahos-layout {
+arahOS-layout {
   display: grid !important;
   grid-template-columns: 300px 1fr 320px !important;
   gap: 28px !important;
@@ -1617,11 +1617,11 @@ arahos-layout {
   margin: 0 auto !important;
   padding: 0 24px !important;
 }
-arahos-col-left, arahos-col-main, arahos-col-right { min-width: 0 !important; }
+arahOS-col-left, arahOS-col-main, arahOS-col-right { min-width: 0 !important; }
 
 /* Left column buttons */
-arahos-left-buttons { display: flex !important; flex-direction: column !important; gap: 12px !important; margin-bottom: 20px !important; }
-arahos-side-btn {
+arahOS-left-buttons { display: flex !important; flex-direction: column !important; gap: 12px !important; margin-bottom: 20px !important; }
+arahOS-side-btn {
   display: block !important;
   text-align: center !important;
   text-decoration: none !important;
@@ -1631,64 +1631,64 @@ arahos-side-btn {
   border-radius: 8px !important;
   transition: all 0.15s ease !important;
 }
-arahos-side-btn-gold {
-  background: var(--arahos-gold-500, #f2a900) !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+arahOS-side-btn-gold {
+  background: var(--arahOS-gold-500, #f2a900) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
 }
-arahos-side-btn-gold:hover { background: var(--arahos-gold-600, #d69400) !important; }
-arahos-side-btn-gold2 {
-  background: var(--arahos-gold-500, #f2a900) !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+arahOS-side-btn-gold:hover { background: var(--arahOS-gold-600, #d69400) !important; }
+arahOS-side-btn-gold2 {
+  background: var(--arahOS-gold-500, #f2a900) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
 }
-arahos-side-btn-gold2:hover { background: var(--arahos-gold-600, #d69400) !important; }
+arahOS-side-btn-gold2:hover { background: var(--arahOS-gold-600, #d69400) !important; }
 
 /* Right sidebar FAQ (compact variant) */
-arahos-frontpage-side { margin: 0 !important; padding: 0 !important; max-width: none !important; }
-arahos-frontpage-side arahos-frontpage-head { text-align: left !important; margin-bottom: 14px !important; }
-arahos-frontpage-side arahos-frontpage-head h2 { font-size: 1.2rem !important; }
-arahos-frontpage-side arahos-frontpage-head p { font-size: 0.85rem !important; }
-arahos-frontpage-side arahos-acc-q { font-size: 0.92rem !important; }
-arahos-frontpage-side arahos-acc-toggle { padding: 13px 16px !important; }
-arahos-frontpage-side arahos-acc-answer { font-size: 0.88rem !important; }
+arahOS-frontpage-side { margin: 0 !important; padding: 0 !important; max-width: none !important; }
+arahOS-frontpage-side arahOS-frontpage-head { text-align: left !important; margin-bottom: 14px !important; }
+arahOS-frontpage-side arahOS-frontpage-head h2 { font-size: 1.2rem !important; }
+arahOS-frontpage-side arahOS-frontpage-head p { font-size: 0.85rem !important; }
+arahOS-frontpage-side arahOS-acc-q { font-size: 0.92rem !important; }
+arahOS-frontpage-side arahOS-acc-toggle { padding: 13px 16px !important; }
+arahOS-frontpage-side arahOS-acc-answer { font-size: 0.88rem !important; }
 
 /* Responsive stacking */
 @media (max-width: 1100px) {
-  arahos-layout { grid-template-columns: 260px 1fr !important; }
-  arahos-col-right { grid-column: 1 / -1 !important; }
+  arahOS-layout { grid-template-columns: 260px 1fr !important; }
+  arahOS-col-right { grid-column: 1 / -1 !important; }
 }
 @media (max-width: 760px) {
-  arahos-layout { grid-template-columns: 1fr !important; }
-  arahos-left-buttons { flex-direction: column !important; }
+  arahOS-layout { grid-template-columns: 1fr !important; }
+  arahOS-left-buttons { flex-direction: column !important; }
 }
 
 /* ============================================================
-   ARAHOS — Hero text must be light on navy (beat #content p rule)
+   arahOS — Hero text must be light on navy (beat #content p rule)
    ============================================================ */
-html:not([data-theme="dark"]) body:not(arahos-dark) #content arahos-hero arahos-hero-sub,
-html:not([data-theme="dark"]) body:not(arahos-dark) #landing_page arahos-hero arahos-hero-sub,
-body #content arahos-hero parahos-hero-sub {
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content arahOS-hero arahOS-hero-sub,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #landing_page arahOS-hero arahOS-hero-sub,
+body #content arahOS-hero parahOS-hero-sub {
   color: #d6dde8 !important;
 }
 
-html:not([data-theme="dark"]) body:not(arahos-dark) #content arahos-hero aarahos-cta-outline,
-html:not([data-theme="dark"]) body:not(arahos-dark) #landing_page arahos-hero aarahos-cta-outline,
-body #content arahos-hero aarahos-cta-outline {
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content arahOS-hero aarahOS-cta-outline,
+html:not([data-theme="dark"]) body:not(arahOS-dark) #landing_page arahOS-hero aarahOS-cta-outline,
+body #content arahOS-hero aarahOS-cta-outline {
   background: transparent !important;
   color: #ffffff !important;
   border-color: rgba(255,255,255,0.55) !important;
 }
-html:not([data-theme="dark"]) body:not(arahos-dark) #content arahos-hero aarahos-cta-outline:hover,
-body #content arahos-hero aarahos-cta-outline:hover {
+html:not([data-theme="dark"]) body:not(arahOS-dark) #content arahOS-hero aarahOS-cta-outline:hover,
+body #content arahOS-hero aarahOS-cta-outline:hover {
   background: rgba(255,255,255,0.12) !important;
   color: #ffffff !important;
   border-color: #ffffff !important;
 }
 
 /* gold CTA stays navy text */
-body #content arahos-hero aarahos-cta-gold { color: #0a1f44 !important; }
+body #content arahOS-hero aarahOS-cta-gold { color: #0a1f44 !important; }
 
 /* ============================================================
-   ARAHOS — Unified header: logo left, nav + user menu right
+   arahOS — Unified header: logo left, nav + user menu right
    ============================================================ */
 #header {
   display: flex !important;
@@ -1700,7 +1700,7 @@ body #content arahos-hero aarahos-cta-gold { color: #0a1f44 !important; }
   padding: 0 24px !important;
   min-height: 64px !important;
 }
-arahos-header-logo {
+arahOS-header-logo {
   display: inline-flex !important;
   align-items: center !important;
   flex-shrink: 0 !important;
@@ -1708,8 +1708,8 @@ arahos-header-logo {
   order: 0 !important;
   float: none !important;
 }
-arahos-header-logo img,
-arahos-header-logo img#logo {
+arahOS-header-logo img,
+arahOS-header-logo img#logo {
   display: block !important;
   height: 52px !important;
   width: auto !important;
@@ -1718,7 +1718,7 @@ arahos-header-logo img#logo {
 }
 
 /* Right side: nav + user grouped */
-arahos-header-right {
+arahOS-header-right {
   display: flex !important;
   align-items: center !important;
   gap: 20px !important;
@@ -1728,8 +1728,8 @@ arahos-header-right {
 }
 
 /* Nav menu inline on the right */
-arahos-header-nav,
-ul#navarahos-header-nav {
+arahOS-header-nav,
+ul#navarahOS-header-nav {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
@@ -1742,8 +1742,8 @@ ul#navarahos-header-nav {
   background: transparent !important;
   box-shadow: none !important;
 }
-arahos-header-nav li { margin: 0 !important; width: auto !important; }
-arahos-header-nav li a {
+arahOS-header-nav li { margin: 0 !important; width: auto !important; }
+arahOS-header-nav li a {
   display: block !important;
   padding: 10px 14px !important;
   color: #eef1f5 !important;
@@ -1754,17 +1754,17 @@ arahos-header-nav li a {
   white-space: nowrap !important;
   transition: background 0.12s ease, color 0.12s ease !important;
 }
-arahos-header-nav li a:hover {
-  background: var(--arahos-navy-600, #1e4c8f) !important;
-  color: var(--arahos-gold-100, #fdf1d6) !important;
+arahOS-header-nav li a:hover {
+  background: var(--arahOS-navy-600, #1e4c8f) !important;
+  color: var(--arahOS-gold-100, #fdf1d6) !important;
 }
-arahos-header-nav li a.active {
-  background: var(--arahos-gold-500, #f2a900) !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+arahOS-header-nav li a.active {
+  background: var(--arahOS-gold-500, #f2a900) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
 }
 
 /* User menu (Guest/Sign In) on the far right */
-arahos-header-user {
+arahOS-header-user {
   display: flex !important;
   align-items: center !important;
   gap: 6px !important;
@@ -1772,21 +1772,21 @@ arahos-header-user {
   color: #ffffff !important;
   white-space: nowrap !important;
 }
-arahos-header-user arahos-guest { color: #c3c9d1 !important; }
-arahos-header-user arahos-sep { color: rgba(255,255,255,0.4) !important; }
-arahos-header-user a {
-  color: var(--arahos-gold-500, #f2a900) !important;
+arahOS-header-user arahOS-guest { color: #c3c9d1 !important; }
+arahOS-header-user arahOS-sep { color: rgba(255,255,255,0.4) !important; }
+arahOS-header-user a {
+  color: var(--arahOS-gold-500, #f2a900) !important;
   font-weight: 700 !important;
   text-decoration: none !important;
 }
-arahos-header-user a:hover { color: #ffffff !important; text-decoration: underline !important; }
-arahos-header-user .flag { margin-left: 6px !important; }
+arahOS-header-user a:hover { color: #ffffff !important; text-decoration: underline !important; }
+arahOS-header-user .flag { margin-left: 6px !important; }
 
-/* Mobile: hide inline nav behind hamburger (JS toggles arahos-nav-open) */
+/* Mobile: hide inline nav behind hamburger (JS toggles arahOS-nav-open) */
 @media (max-width: 900px) {
-  arahos-header-right { gap: 10px !important; }
-  arahos-header-nav,
-  ul#navarahos-header-nav {
+  arahOS-header-right { gap: 10px !important; }
+  arahOS-header-nav,
+  ul#navarahOS-header-nav {
     display: none !important;
     flex-direction: column !important;
     align-items: stretch !important;
@@ -1794,21 +1794,21 @@ arahos-header-user .flag { margin-left: 6px !important; }
     top: 64px !important;
     left: 0 !important;
     right: 0 !important;
-    background: var(--arahos-navy-800, #102a56) !important;
+    background: var(--arahOS-navy-800, #102a56) !important;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
     padding: 6px 0 !important;
     z-index: 999 !important;
   }
-  arahos-header-navarahos-nav-open { display: flex !important; }
-  arahos-header-nav li a { padding: 14px 24px !important; border-radius: 0 !important; }
-  arahos-header-logo img, arahos-header-logo img#logo { height: 44px !important; max-width: 200px !important; }
+  arahOS-header-navarahOS-nav-open { display: flex !important; }
+  arahOS-header-nav li a { padding: 14px 24px !important; border-radius: 0 !important; }
+  arahOS-header-logo img, arahOS-header-logo img#logo { height: 44px !important; max-width: 200px !important; }
 }
 
 /* ============================================================
-   ARAHOS — Full-width hero (edge-to-edge, break out of padding)
+   arahOS — Full-width hero (edge-to-edge, break out of padding)
    ============================================================ */
-#landing_page arahos-hero,
-#content arahos-hero {
+#landing_page arahOS-hero,
+#content arahOS-hero {
   margin-left: calc(-48px - 7px) !important;
   margin-right: calc(-48px - 7px) !important;
   margin-top: -32px !important;
@@ -1817,11 +1817,11 @@ arahos-header-user .flag { margin-left: 6px !important; }
   padding-right: 48px !important;
   box-sizing: border-box !important;
 }
-arahos-hero-inner { margin: 0 auto !important; }
+arahOS-hero-inner { margin: 0 auto !important; }
 
 @media (max-width: 768px) {
-  #landing_page arahos-hero,
-  #content arahos-hero {
+  #landing_page arahOS-hero,
+  #content arahOS-hero {
     margin-left: -16px !important;
     margin-right: -16px !important;
     width: calc(100% + 32px) !important;
@@ -1831,86 +1831,86 @@ arahos-hero-inner { margin: 0 auto !important; }
 }
 
 /* ============================================================
-   ARAHOS — Gold header (brand statement) + new banner logo
+   arahOS — Gold header (brand statement) + new banner logo
    ============================================================ */
 #header {
-  background: linear-gradient(180deg, #f7b32b 0%, var(--arahos-gold-500, #f2a900) 100%) !important;
+  background: linear-gradient(180deg, #f7b32b 0%, var(--arahOS-gold-500, #f2a900) 100%) !important;
   border-bottom: none !important;
 }
 
 /* Logo sits directly on gold — no white card needed */
-arahos-header-logo {
+arahOS-header-logo {
   background: transparent !important;
   padding: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
 }
-arahos-header-logo img,
-arahos-header-logo img#logo {
+arahOS-header-logo img,
+arahOS-header-logo img#logo {
   background: transparent !important;
   border-radius: 0 !important;
   box-shadow: none !important;
 }
 
 /* Nav menu on gold → navy text */
-arahos-header-nav li a,
-ul#navarahos-header-nav li a,
+arahOS-header-nav li a,
+ul#navarahOS-header-nav li a,
 #header ul#nav li a {
-  color: var(--arahos-navy-900, #0a1f44) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
   font-weight: 700 !important;
 }
-arahos-header-nav li a:hover,
-ul#navarahos-header-nav li a:hover,
+arahOS-header-nav li a:hover,
+ul#navarahOS-header-nav li a:hover,
 #header ul#nav li a:hover {
   background: rgba(10, 31, 68, 0.12) !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
 }
-arahos-header-nav li a.active,
-ul#navarahos-header-nav li a.active,
+arahOS-header-nav li a.active,
+ul#navarahOS-header-nav li a.active,
 #header ul#nav li a.active {
-  background: var(--arahos-navy-900, #0a1f44) !important;
-  color: var(--arahos-gold-500, #f2a900) !important;
+  background: var(--arahOS-navy-900, #0a1f44) !important;
+  color: var(--arahOS-gold-500, #f2a900) !important;
 }
 
 /* User menu (Guest User | Sign In) on gold → navy */
-arahos-header-user,
-#header arahos-header-user,
+arahOS-header-user,
+#header arahOS-header-user,
 #header .pull-right {
-  color: var(--arahos-navy-900, #0a1f44) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
 }
-arahos-header-user arahos-guest,
-#header arahos-guest { color: var(--arahos-navy-800, #102a56) !important; }
-arahos-header-user arahos-sep { color: rgba(10, 31, 68, 0.4) !important; }
-arahos-header-user a,
-#header arahos-header-user a {
-  color: var(--arahos-navy-900, #0a1f44) !important;
+arahOS-header-user arahOS-guest,
+#header arahOS-guest { color: var(--arahOS-navy-800, #102a56) !important; }
+arahOS-header-user arahOS-sep { color: rgba(10, 31, 68, 0.4) !important; }
+arahOS-header-user a,
+#header arahOS-header-user a {
+  color: var(--arahOS-navy-900, #0a1f44) !important;
   font-weight: 700 !important;
 }
-arahos-header-user a:hover,
-#header arahos-header-user a:hover {
-  color: var(--arahos-navy-600, #1e4c8f) !important;
+arahOS-header-user a:hover,
+#header arahOS-header-user a:hover {
+  color: var(--arahOS-navy-600, #1e4c8f) !important;
   text-decoration: underline !important;
 }
 
 /* Dark-mode + theme toggle buttons on gold */
-#header arahos-theme-toggle,
-#header arahos-nav-toggle {
-  color: var(--arahos-navy-900, #0a1f44) !important;
+#header arahOS-theme-toggle,
+#header arahOS-nav-toggle {
+  color: var(--arahOS-navy-900, #0a1f44) !important;
   background: rgba(10, 31, 68, 0.08) !important;
 }
-#header arahos-theme-toggle:hover,
-#header arahos-nav-toggle:hover {
+#header arahOS-theme-toggle:hover,
+#header arahOS-nav-toggle:hover {
   background: rgba(10, 31, 68, 0.16) !important;
 }
 
 /* Mobile dropdown nav keeps navy bg for readability */
 @media (max-width: 900px) {
-  arahos-header-nav, ul#navarahos-header-nav {
-    background: var(--arahos-navy-800, #102a56) !important;
+  arahOS-header-nav, ul#navarahOS-header-nav {
+    background: var(--arahOS-navy-800, #102a56) !important;
   }
-  arahos-header-nav li a, ul#navarahos-header-nav li a { color: #eef1f5 !important; }
-  arahos-header-nav li a.active, ul#navarahos-header-nav li a.active {
-    background: var(--arahos-gold-500, #f2a900) !important;
-    color: var(--arahos-navy-900, #0a1f44) !important;
+  arahOS-header-nav li a, ul#navarahOS-header-nav li a { color: #eef1f5 !important; }
+  arahOS-header-nav li a.active, ul#navarahOS-header-nav li a.active {
+    background: var(--arahOS-gold-500, #f2a900) !important;
+    color: var(--arahOS-navy-900, #0a1f44) !important;
   }
 }

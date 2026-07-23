@@ -1,23 +1,23 @@
 /* ============================================================
-   ARAHOS OIT Help Desk — Service Worker (PWA offline support)
+   arahOS OIT Help Desk — Service Worker (PWA offline support)
    Strategy:
      - Static assets (css/js/images/fonts): cache-first
      - HTML pages: network-first, fall back to cache + offline page
    Bump CACHE_VERSION to force refresh on deploy.
    ============================================================ */
-const CACHE_VERSION = 'arahos-v1';
+const CACHE_VERSION = 'arahOS-v1';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const RUNTIME_CACHE = CACHE_VERSION + '-runtime';
 
 const PRECACHE = [
   '/index.php',
   '/offline.html',
-  '/css/arahos/arahos-tokens.css',
-  '/css/arahos/arahos-client-portal.css',
-  '/js/arahos/arahos-client-portal.js',
-  '/images/arahos/viseal.png',
-  '/images/arahos/pwa/icon-192.png',
-  '/images/arahos/pwa/icon-512.png'
+  '/css/arahOS/arahOS-tokens.css',
+  '/css/arahOS/arahOS-client-portal.css',
+  '/js/arahOS/arahOS-client-portal.js',
+  '/images/arahOS/viseal.png',
+  '/images/arahOS/pwa/icon-192.png',
+  '/images/arahOS/pwa/icon-512.png'
 ];
 
 // Install: precache core assets

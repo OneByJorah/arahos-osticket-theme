@@ -1,5 +1,5 @@
 /* ============================================================
-   Arahos Help Desk — PWA registration + Install banner
+   arahOS Help Desk — PWA registration + Install banner
    1) Registers /sw.js
    2) Shows a branded "Install the app" banner when the browser
       fires beforeinstallprompt (and on iOS Safari via guidance)
@@ -21,7 +21,7 @@
 
   // --- 2) Install banner ---
   var deferredPrompt = null;
-  var dismissedKey = "arahos-install-dismissed";
+  var dismissedKey = "arahOS-install-dismissed";
 
   window.addEventListener("beforeinstallprompt", function (e) {
     e.preventDefault();
@@ -41,14 +41,14 @@
 
   function showBanner() {
     if (isInStandalone() || wasDismissed()) return;
-    if (document.getElementById("arahos-install-banner")) return;
+    if (document.getElementById("arahOS-install-banner")) return;
 
     var bar = document.createElement("div");
-    bar.id = "arahos-install-banner";
+    bar.id = "arahOS-install-banner";
     bar.innerHTML =
-      '<img src="/images/arahos/pwa/icon-192.png" alt="Arahos" class="vib-icon">' +
+      '<img src="/images/arahOS/pwa/icon-192.png" alt="arahOS" class="vib-icon">' +
       '<div class="vib-text">' +
-        '<strong>Install Arahos Help Desk</strong>' +
+        '<strong>Install arahOS Help Desk</strong>' +
         '<span>Add to your home screen for quick access</span>' +
       '</div>' +
       '<button class="vib-install" type="button">' + (isIOS() ? "How to install" : "Install") + '</button>' +
@@ -77,9 +77,9 @@
 
   function showIOSHelp() {
     var modal = document.createElement("div");
-    modal.className = "arahos-ios-help";
+    modal.className = "arahOS-ios-help";
     modal.innerHTML =
-      '<div class="arahos-ios-card">' +
+      '<div class="arahOS-ios-card">' +
         '<h3>Install on your iPhone</h3>' +
         '<ol>' +
           '<li>Tap the <strong>Share</strong> button <span class="ios-share">&#8679;</span></li>' +
@@ -92,7 +92,7 @@
     modal.querySelector(".vib-install").addEventListener("click", function () {
       try { localStorage.setItem(dismissedKey, "1"); } catch (e) {}
       modal.remove();
-      var b = document.getElementById("arahos-install-banner"); if (b) b.remove();
+      var b = document.getElementById("arahOS-install-banner"); if (b) b.remove();
     });
   }
 
@@ -103,6 +103,6 @@
 
   // Hide banner once installed
   window.addEventListener("appinstalled", function () {
-    var b = document.getElementById("arahos-install-banner"); if (b) b.remove();
+    var b = document.getElementById("arahOS-install-banner"); if (b) b.remove();
   });
 })();

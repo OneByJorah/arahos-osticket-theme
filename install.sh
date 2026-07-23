@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ============================================================
-# Arahos Help Desk — osTicket Theme installer
+# arahOS Help Desk — osTicket Theme installer
 # Usage: sudo ./install.sh /path/to/osticket/upload
 # ============================================================
 set -euo pipefail
@@ -14,7 +14,7 @@ if [[ ! -d "$TARGET" || ! -f "$TARGET/main.inc.php" ]]; then
   exit 1
 fi
 
-echo "==> Installing Arahos theme into: $TARGET"
+echo "==> Installing arahOS theme into: $TARGET"
 
 # Web-server user (owner of osTicket files)
 WEBUSER="$(stat -c '%U' "$TARGET/main.inc.php")"
@@ -24,18 +24,18 @@ echo "    File owner detected: ${WEBUSER}:${WEBGROUP}"
 backup() { [[ -f "$1" ]] && cp -a "$1" "$1.bak-$(date +%s)" && echo "    backed up $(basename "$1")"; }
 
 # 1. Plugin
-mkdir -p "$TARGET/include/plugins/arahos-theme"
-cp -f "$HERE/plugin/"* "$TARGET/include/plugins/arahos-theme/"
+mkdir -p "$TARGET/include/plugins/arahOS-theme"
+cp -f "$HERE/plugin/"* "$TARGET/include/plugins/arahOS-theme/"
 echo "    plugin files copied"
 
 # 2. CSS
-mkdir -p "$TARGET/css/arahos"
-cp -f "$HERE/css/arahos/arahos-"*.css "$TARGET/css/arahos/"
+mkdir -p "$TARGET/css/arahOS"
+cp -f "$HERE/css/arahOS/arahOS-"*.css "$TARGET/css/arahOS/"
 echo "    theme CSS copied"
 
 # 3. JS
-mkdir -p "$TARGET/js/arahos"
-cp -f "$HERE/js/arahos/arahos-"*.js "$TARGET/js/arahos/"
+mkdir -p "$TARGET/js/arahOS"
+cp -f "$HERE/js/arahOS/arahOS-"*.js "$TARGET/js/arahOS/"
 echo "    theme JS copied"
 
 # 4. Templates
@@ -69,9 +69,9 @@ cp -f "$HERE/sw.js" "$TARGET/sw.js"
 cp -f "$HERE/offline.html" "$TARGET/offline.html"
 [[ -f "$TARGET/.htaccess" ]] && backup "$TARGET/.htaccess" || true
 cp -f "$HERE/.htaccess" "$TARGET/.htaccess"
-mkdir -p "$TARGET/images/arahos/pwa"
-cp -f "$HERE/images/arahos/"* "$TARGET/images/arahos/" 2>/dev/null || true
-cp -f "$HERE/images/arahos/pwa/"* "$TARGET/images/arahos/pwa/" 2>/dev/null || true
+mkdir -p "$TARGET/images/arahOS/pwa"
+cp -f "$HERE/images/arahOS/"* "$TARGET/images/arahOS/" 2>/dev/null || true
+cp -f "$HERE/images/arahOS/pwa/"* "$TARGET/images/arahOS/pwa/" 2>/dev/null || true
 echo "    PWA + images copied"
 
 # 7. Showcase (optional)
@@ -79,8 +79,8 @@ cp -rf "$HERE/showcase" "$TARGET/" 2>/dev/null || true
 echo "    showcase copied"
 
 # 8. Permissions
-chown -R "$WEBUSER:$WEBGROUP" "$TARGET/include/plugins/arahos-theme"   "$TARGET/css/arahos" "$TARGET/js/arahos"   "$TARGET/include/staff" "$TARGET/include/client"   "$TARGET/images/arahos"   "$TARGET/manifest.webmanifest" "$TARGET/sw.js" "$TARGET/offline.html"   "$TARGET/.htaccess" "$TARGET/index.php"   "$TARGET/showcase" 2>/dev/null || true
-find "$TARGET/include/plugins/arahos-theme" "$TARGET/css/arahos" "$TARGET/js/arahos"   "$TARGET/include/staff" "$TARGET/include/client"   "$TARGET/images/arahos" "$TARGET/showcase"   -type f -exec chmod 644 {} \; 2>/dev/null || true
+chown -R "$WEBUSER:$WEBGROUP" "$TARGET/include/plugins/arahOS-theme"   "$TARGET/css/arahOS" "$TARGET/js/arahOS"   "$TARGET/include/staff" "$TARGET/include/client"   "$TARGET/images/arahOS"   "$TARGET/manifest.webmanifest" "$TARGET/sw.js" "$TARGET/offline.html"   "$TARGET/.htaccess" "$TARGET/index.php"   "$TARGET/showcase" 2>/dev/null || true
+find "$TARGET/include/plugins/arahOS-theme" "$TARGET/css/arahOS" "$TARGET/js/arahOS"   "$TARGET/include/staff" "$TARGET/include/client"   "$TARGET/images/arahOS" "$TARGET/showcase"   -type f -exec chmod 644 {} \; 2>/dev/null || true
 echo "    permissions set"
 
 cat <<EOFC
@@ -88,7 +88,7 @@ cat <<EOFC
 ==> Installation complete!
 
 Next steps:
-    1. Admin Panel → Manage → Plugins → enable 'Arahos Help Desk Theme'
+    1. Admin Panel → Manage → Plugins → enable 'arahOS Help Desk Theme'
     2. (Optional) mysql -u <user> -p <db> < $HERE/db/kb-seed.sql
     3. Visit /showcase/responsive.html to see the theme at phone/tablet/laptop sizes
 

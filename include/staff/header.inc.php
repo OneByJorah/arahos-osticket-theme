@@ -28,10 +28,10 @@ if (osTicket::is_ie())
     <meta http-equiv="x-pjax-version" content="<?php echo GIT_VERSION; ?>">
     <title><?php echo Format::htmlchars($title); ?></title>
 <?php
-    // Arahos theme: inject navy/gold CSS inline (plugin root on disk).
-    if (class_exists('ArahosOSTicketTheme')
-            && ($__arahos = ArahosOSTicketTheme::cssBlock('staff'))) {
-        echo $__arahos, "\n";
+    // arahOS theme: inject navy/gold CSS inline (plugin root on disk).
+    if (class_exists('arahOSOSTicketTheme')
+            && ($__arahOS = arahOSOSTicketTheme::cssBlock('staff'))) {
+        echo $__arahOS, "\n";
     }
 ?>
     <!--[if IE]>
@@ -78,11 +78,11 @@ if (osTicket::is_ie())
         echo sprintf('<div id="notice_bar">%s</div>', $ost->getNotice());
     ?>
 
-    <!-- ===== Arahos agent-panel top bar ===== -->
-    <div id="arahos-staff-topbar">
-        <a class="arahos-badge" href="<?php echo ROOT_PATH ?>scp/index.php" title="Arahos Help Desk">VI</a>
-        <strong class="arahos-agent-title">Arahos &mdash; Agent Panel</strong>
-        <div class="arahos-agent-who">
+    <!-- ===== arahOS agent-panel top bar ===== -->
+    <div id="arahOS-staff-topbar">
+        <a class="arahOS-badge" href="<?php echo ROOT_PATH ?>scp/index.php" title="arahOS Help Desk">VI</a>
+        <strong class="arahOS-agent-title">arahOS &mdash; Agent Panel</strong>
+        <div class="arahOS-agent-who">
             <?php echo sprintf(__('Welcome, %s.'), '<strong>'.Format::htmlchars($thisstaff->getFirstName()).'</strong>'); ?>
             <?php if($thisstaff->isAdmin() && !defined('ADMINPAGE')) { ?>
             | <a href="<?php echo ROOT_PATH ?>scp/admin.php" class="no-pjax"><?php echo __('Admin Panel'); ?></a>

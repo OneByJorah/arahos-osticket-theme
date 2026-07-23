@@ -1,121 +1,121 @@
 /* ============================================================
-   ARAHOST Help Desk — STAFF (AGENT) PANEL theme
-   Realizes the arahos-osticket-preview.html staff mockup: gold-bordered
+   arahOST Help Desk — STAFF (AGENT) PANEL theme
+   Realizes the arahOS-osticket-preview.html staff mockup: gold-bordered
    navy top bar with VI badge, navy tabs, left sidebar, gold CTA,
    ticket queue with status pills, stat cards.
    ============================================================ */
 
 :root {
-  --arahos-navy-900:#0a1f44;
-  --arahos-navy-800:#102a56;
-  --arahos-navy-700:#163a70;
-  --arahos-navy-600:#1e4c8f;
-  --arahos-gold-500:#f2a900;
-  --arahos-gold-600:#d69400;
-  --arahos-gold-100:#fdf1d6;
-  --arahos-gray-50:#f7f8fa;
-  --arahos-gray-100:#eef0f3;
-  --arahos-gray-200:#dde1e7;
-  --arahos-gray-300:#c3c9d1;
-  --arahos-gray-500:#6b7280;
-  --arahos-gray-900:#1a1d23;
+  --arahOS-navy-900:#0a1f44;
+  --arahOS-navy-800:#102a56;
+  --arahOS-navy-700:#163a70;
+  --arahOS-navy-600:#1e4c8f;
+  --arahOS-gold-500:#f2a900;
+  --arahOS-gold-600:#d69400;
+  --arahOS-gold-100:#fdf1d6;
+  --arahOS-gray-50:#f7f8fa;
+  --arahOS-gray-100:#eef0f3;
+  --arahOS-gray-200:#dde1e7;
+  --arahOS-gray-300:#c3c9d1;
+  --arahOS-gray-500:#6b7280;
+  --arahOS-gray-900:#1a1d23;
   --st-open:#1e8e5a; --st-overdue:#d64545; --st-pending:#d69400; --st-closed:#6b7280;
-  --arahos-shadow:0 4px 14px rgba(10,31,68,.12);
-  --arahos-radius:14px;
-  --arahos-focus:0 0 0 3px rgba(242,169,0,.5);
+  --arahOS-shadow:0 4px 14px rgba(10,31,68,.12);
+  --arahOS-radius:14px;
+  --arahOS-focus:0 0 0 3px rgba(242,169,0,.5);
 }
 
-body { background:var(--arahos-gray-50); }
+body { background:var(--arahOS-gray-50); }
 #container { min-height:100vh; }
 
-/* ---- Arahos staff top bar (persists across pjax) ---- */
-#arahos-staff-topbar {
-  background: var(--arahos-navy-900);
-  border-bottom: 3px solid var(--arahos-gold-500);
+/* ---- arahOS staff top bar (persists across pjax) ---- */
+#arahOS-staff-topbar {
+  background: var(--arahOS-navy-900);
+  border-bottom: 3px solid var(--arahOS-gold-500);
   display:flex; align-items:center; padding:0 18px; height:52px; color:#fff; gap:12px;
 }
-#arahos-staff-topbar .arahos-badge {
-  width:30px; height:30px; border-radius:6px; background: var(--arahos-gold-500);
-  color: var(--arahos-navy-900); font-weight:800; display:flex; align-items:center;
+#arahOS-staff-topbar .arahOS-badge {
+  width:30px; height:30px; border-radius:6px; background: var(--arahOS-gold-500);
+  color: var(--arahOS-navy-900); font-weight:800; display:flex; align-items:center;
   justify-content:center; font-size:.9rem; text-decoration:none; flex:0 0 auto;
 }
-#arahos-staff-topbar .arahos-agent-title { font-size:.95rem; font-weight:700; }
-#arahos-staff-topbar .arahos-agent-who {
-  margin-left:auto; font-size:.82rem; color: var(--arahos-gray-300);
+#arahOS-staff-topbar .arahOS-agent-title { font-size:.95rem; font-weight:700; }
+#arahOS-staff-topbar .arahOS-agent-who {
+  margin-left:auto; font-size:.82rem; color: var(--arahOS-gray-300);
   display:flex; align-items:center; gap:6px;
 }
-#arahos-staff-topbar .arahos-agent-who a { color: var(--arahos-gold-500); text-decoration:none; }
-#arahos-staff-topbar .arahos-agent-who a:hover { text-decoration:underline; }
+#arahOS-staff-topbar .arahOS-agent-who a { color: var(--arahOS-gold-500); text-decoration:none; }
+#arahOS-staff-topbar .arahOS-agent-who a:hover { text-decoration:underline; }
 
 /* hide osTicket's default logo bar (#header) — we replaced it with topbar */
 #header { display:none; }
 
 /* ---- Main nav (Tabs: Tickets / KB / Reports / Admin) ---- */
 #nav {
-  background: var(--arahos-navy-800); list-style:none; margin:0; padding:0;
+  background: var(--arahOS-navy-800); list-style:none; margin:0; padding:0;
   display:flex; flex-wrap:wrap;
 }
 #nav li { display:inline-block; }
 #nav li a {
-  color: var(--arahos-gray-100); text-decoration:none; font-size:.85rem;
+  color: var(--arahOS-gray-100); text-decoration:none; font-size:.85rem;
   padding:11px 16px; display:inline-block;
 }
 #nav li a.active, #nav li.active a {
-  background: var(--arahos-gold-500); color: var(--arahos-navy-900); font-weight:700;
+  background: var(--arahOS-gold-500); color: var(--arahOS-navy-900); font-weight:700;
 }
-#nav li a:hover:not(.active) { background: var(--arahos-navy-700); }
+#nav li a:hover:not(.active) { background: var(--arahOS-navy-700); }
 
-/* ---- Arahos sidebar (sub-nav) ---- */
-.arahos-sidebar {
-  background: var(--arahos-gray-50);
-  border-right:1px solid var(--arahos-gray-200);
+/* ---- arahOS sidebar (sub-nav) ---- */
+.arahOS-sidebar {
+  background: var(--arahOS-gray-50);
+  border-right:1px solid var(--arahOS-gray-200);
   padding:16px 0; min-width:200px; align-self:stretch;
 }
-.arahos-sidebar-head {
+.arahOS-sidebar-head {
   padding:4px 18px 10px; font-size:.72rem; text-transform:uppercase;
-  letter-spacing:.05em; color: var(--arahos-gray-500); font-weight:700;
+  letter-spacing:.05em; color: var(--arahOS-gray-500); font-weight:700;
 }
-.arahos-sidebar #sub_nav { list-style:none; margin:0; padding:0; }
-.arahos-sidebar #sub_nav li a {
-  display:block; padding:9px 18px; color: var(--arahos-navy-700);
+.arahOS-sidebar #sub_nav { list-style:none; margin:0; padding:0; }
+.arahOS-sidebar #sub_nav li a {
+  display:block; padding:9px 18px; color: var(--arahOS-navy-700);
   text-decoration:none; font-size:.85rem; border-left:3px solid transparent;
 }
-.arahos-sidebar #sub_nav li a.active {
-  background: var(--arahos-gold-100); border-left-color: var(--arahos-gold-500);
-  font-weight:700; color: var(--arahos-navy-900);
+.arahOS-sidebar #sub_nav li a.active {
+  background: var(--arahOS-gold-100); border-left-color: var(--arahOS-gold-500);
+  font-weight:700; color: var(--arahOS-navy-900);
 }
-.arahos-sidebar #sub_nav li a:hover:not(.active) { background: var(--arahos-gray-100); }
+.arahOS-sidebar #sub_nav li a:hover:not(.active) { background: var(--arahOS-gray-100); }
 
 /* put sidebar + content side by side */
 #pjax-container { display:flex; flex-wrap:wrap; align-items:stretch; }
-#pjax-container > .arahos-sidebar { flex:0 0 200px; }
+#pjax-container > .arahOS-sidebar { flex:0 0 200px; }
 #content { flex:1 1 auto; padding:20px; min-width:0; }
 
 /* ---- headings ---- */
-#content h1, #content h2 { color: var(--arahos-navy-900); margin-top:0; }
+#content h1, #content h2 { color: var(--arahOS-navy-900); margin-top:0; }
 
 /* ---- toolbar / action buttons ---- */
 #content .button, #content input[type=submit], #content input[type=button], #content button {
   border-radius:4px; font-weight:700; font-family:inherit;
 }
 #content .button, #content input[type=button] {
-  background: var(--arahos-navy-700); color:#fff; border:1px solid var(--arahos-navy-900);
+  background: var(--arahOS-navy-700); color:#fff; border:1px solid var(--arahOS-navy-900);
 }
-#content .button:hover { background: var(--arahos-navy-600); }
+#content .button:hover { background: var(--arahOS-navy-600); }
 #content .button.green, #content input[type=submit].green, #content .btn.gold,
 #content a.button.green {
-  background: var(--arahos-gold-500); color: var(--arahos-navy-900);
-  border-color: var(--arahos-gold-600);
+  background: var(--arahOS-gold-500); color: var(--arahOS-navy-900);
+  border-color: var(--arahOS-gold-600);
 }
-#content .button.green:hover { background: var(--arahos-gold-600); }
+#content .button.green:hover { background: var(--arahOS-gold-600); }
 #content .button.danger { background:#d64545; color:#fff; border-color:#b53232; }
 
 #content input[type=text], #content input[type=search], #content select, #content textarea {
-  border:1px solid var(--arahos-gray-300); border-radius:4px; padding:8px 10px;
+  border:1px solid var(--arahOS-gray-300); border-radius:4px; padding:8px 10px;
   font-family:inherit;
 }
 #content input:focus, #content select:focus, #content textarea:focus {
-  outline:none; border-color: var(--arahos-gold-500); box-shadow: var(--arahos-focus);
+  outline:none; border-color: var(--arahOS-gold-500); box-shadow: var(--arahOS-focus);
 }
 
 /* ---- stat cards ---- */
@@ -123,29 +123,29 @@ body { background:var(--arahos-gray-50); }
   display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:18px;
 }
 #content .stat, #content .dashboard-stat {
-  background:#fff; border:1px solid var(--arahos-gray-200); border-radius:10px;
+  background:#fff; border:1px solid var(--arahOS-gray-200); border-radius:10px;
   padding:14px; text-align:center;
 }
 #content .stat .n, #content .dashboard-stat .n {
-  font-size:1.5rem; font-weight:800; color: var(--arahos-navy-900);
+  font-size:1.5rem; font-weight:800; color: var(--arahOS-navy-900);
 }
 #content .stat .l, #content .dashboard-stat .l {
-  font-size:.72rem; color: var(--arahos-gray-500); text-transform:uppercase; letter-spacing:.03em;
+  font-size:.72rem; color: var(--arahOS-gray-500); text-transform:uppercase; letter-spacing:.03em;
 }
 
 /* ---- ticket queue table (matches mockup pills) ---- */
 #content table.list, #content table {
   width:100%; border-collapse:collapse; background:#fff;
-  border:1px solid var(--arahos-gray-200); border-radius:10px; overflow:hidden;
+  border:1px solid var(--arahOS-gray-200); border-radius:10px; overflow:hidden;
 }
 #content table.list th, #content th {
-  background: var(--arahos-navy-900); color:#fff; text-align:left;
+  background: var(--arahOS-navy-900); color:#fff; text-align:left;
   padding:10px 12px; font-size:.78rem; font-weight:600;
 }
 #content table.list td, #content td {
-  padding:11px 12px; border-bottom:1px solid var(--arahos-gray-100); font-size:.85rem;
+  padding:11px 12px; border-bottom:1px solid var(--arahOS-gray-100); font-size:.85rem;
 }
-#content table.list tr:hover td, #content tbody tr:hover td { background: var(--arahos-gray-50); }
+#content table.list tr:hover td, #content tbody tr:hover td { background: var(--arahOS-gray-50); }
 
 /* status pills */
 .pill, .label, .badge {
@@ -160,31 +160,31 @@ tr.overdue td, tr.row.muted.overdue td { background: rgba(214,69,69,.06); }
 
 /* priority text */
 .pr.high, .priority.high { color: var(--st-overdue); font-weight:700; }
-.pr.normal, .priority.normal { color: var(--arahos-navy-700); }
-.pr.low, .priority.low { color: var(--arahos-gray-500); }
+.pr.normal, .priority.normal { color: var(--arahOS-navy-700); }
+.pr.low, .priority.low { color: var(--arahOS-gray-500); }
 
 /* ---- banners ---- */
 .notice-banner, #notice_bar {
-  background: var(--arahos-gold-100); border-left:4px solid var(--arahos-gold-500);
-  color: var(--arahos-navy-900); padding:10px 14px; border-radius:4px;
+  background: var(--arahOS-gold-100); border-left:4px solid var(--arahOS-gold-500);
+  color: var(--arahOS-navy-900); padding:10px 14px; border-radius:4px;
 }
-.warning-banner, #warning_bar { border-left:4px solid var(--arahos-gold-600); }
+.warning-banner, #warning_bar { border-left:4px solid var(--arahOS-gold-600); }
 .error-banner, #error_bar { border-left:4px solid #d64545; }
 
 /* ---- footer ---- */
 #footer {
-  background: var(--arahos-navy-900); color: var(--arahos-gray-300);
+  background: var(--arahOS-navy-900); color: var(--arahOS-gray-300);
   text-align:center; padding:14px; font-size:.8rem;
 }
 
 @media (max-width:800px){
   #pjax-container { flex-direction:column; }
-  #pjax-container > .arahos-sidebar { flex:1 1 auto; border-right:none; border-bottom:1px solid var(--arahos-gray-200); }
+  #pjax-container > .arahOS-sidebar { flex:1 1 auto; border-right:none; border-bottom:1px solid var(--arahOS-gray-200); }
   #content .stats, #content .dashboard-stats { grid-template-columns:repeat(2,1fr); }
 }
 
 /* ============================================================
-   Arahos v7 — Full-width backend + force navy top nav
+   arahOS v7 — Full-width backend + force navy top nav
    scp.css locks #container to 960px and styles #nav gray.
    These win with body-scoped specificity.
    ============================================================ */
@@ -206,7 +206,7 @@ body #content {
 /* Force navy nav bar (override scp.css #eee) */
 body ul#nav,
 body #nav {
-  background: var(--arahos-navy-800, #102a56) !important;
+  background: var(--arahOS-navy-800, #102a56) !important;
   background-image: none !important;
   border: none !important;
   width: 100% !important;
@@ -221,15 +221,15 @@ body #nav li a:hover,
 body ul#nav li a:hover,
 body #nav li.active a,
 body ul#nav li.active a {
-  background: var(--arahos-gold-500, #f2a900) !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+  background: var(--arahOS-gold-500, #f2a900) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
 }
 
 /* Header full width */
 body #header { width: 100% !important; box-sizing: border-box !important; }
 
 /* ============================================================
-   Arahos v8 — Ticket view: action buttons + thread entries
+   arahOS v8 — Ticket view: action buttons + thread entries
    ============================================================ */
 
 /* Primary action buttons (Post Reply = input.save) rendered washed-out.
@@ -239,7 +239,7 @@ body input[type="submit"].save,
 body button.save,
 body .pull-right input[type="submit"],
 body #response_form input[type="submit"] {
-  background: var(--arahos-navy-700, #163a70) !important;
+  background: var(--arahOS-navy-700, #163a70) !important;
   color: #ffffff !important;
   border: none !important;
   border-radius: 6px !important;
@@ -254,14 +254,14 @@ body #response_form input[type="submit"] {
 body input.save:hover,
 body button.save:hover,
 body #response_form input[type="submit"]:hover {
-  background: var(--arahos-gold-500, #f2a900) !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+  background: var(--arahOS-gold-500, #f2a900) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
 }
 /* Reset/secondary buttons stay light but readable */
 body input[type="reset"],
 body input.cancel {
   background: #eef1f5 !important;
-  color: var(--arahos-navy-900, #0a1f44) !important;
+  color: var(--arahOS-navy-900, #0a1f44) !important;
   border: 1px solid #d1d5db !important;
   border-radius: 6px !important;
   padding: 9px 18px !important;
@@ -281,17 +281,17 @@ body .thread-entry .header,
 body .thread-entry .thread-body {
   padding: 12px 14px !important;
 }
-body .thread-entry.message { border-left: 3px solid var(--arahos-navy-600, #1d4a8f) !important; }
-body .thread-entry.response { border-left: 3px solid var(--arahos-gold-500, #f2a900) !important; }
+body .thread-entry.message { border-left: 3px solid var(--arahOS-navy-600, #1d4a8f) !important; }
+body .thread-entry.response { border-left: 3px solid var(--arahOS-gold-500, #f2a900) !important; }
 body .thread-entry.note { border-left: 3px solid #e0a800 !important; background: #fffdf5 !important; }
 
 /* Ticket info tables (status/user/dept) readability */
 body table.ticket_info th,
 body #ticket-info th,
-body .infoTable th { color: var(--arahos-navy-700, #163a70) !important; font-weight: 700 !important; }
+body .infoTable th { color: var(--arahOS-navy-700, #163a70) !important; font-weight: 700 !important; }
 
 /* ============================================================
-   Arahos v9 — Select widgets + faint event text
+   arahOS v9 — Select widgets + faint event text
    ============================================================ */
 
 /* Native selects: don't clip text with tight padding */
@@ -329,7 +329,7 @@ body .thread-event .description {
 body .thread-event b, body .thread-event .faded { color: #374151 !important; }
 
 /* ============================================================
-   Arahos v10 — Backend fixes: table header links + nav tab height
+   arahOS v10 — Backend fixes: table header links + nav tab height
    (these load inline via the plugin on all SCP pages)
    ============================================================ */
 
@@ -343,7 +343,7 @@ table.queue thead th a:visited {
 }
 table.list thead th a:hover,
 table.queue thead th a:hover {
-  color: var(--arahos-gold-500, #f2a900) !important;
+  color: var(--arahOS-gold-500, #f2a900) !important;
 }
 
 /* Nav bar: let tabs size naturally (fix clipped tabs) */

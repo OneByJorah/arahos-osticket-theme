@@ -1,5 +1,5 @@
 /* ============================================================
-   Arahos Help Desk — Staff Panel enhancements
+   arahOS Help Desk — Staff Panel enhancements
    1) Collapsible mobile sidebar with backdrop + Escape-to-close
    2) Dark mode toggle (persisted, useful for overnight NOC shifts)
 
@@ -22,26 +22,26 @@
     // --- 1) Mobile sidebar toggle + backdrop ---
     if (sidebar && topbar) {
       var backdrop = document.createElement("div");
-      backdrop.className = "arahos-sidebar-backdrop";
+      backdrop.className = "arahOS-sidebar-backdrop";
       document.body.appendChild(backdrop);
 
       var toggleBtn = document.createElement("button");
-      toggleBtn.className = "arahos-sidebar-toggle";
+      toggleBtn.className = "arahOS-sidebar-toggle";
       toggleBtn.setAttribute("aria-label", "Toggle department menu");
       toggleBtn.innerHTML = "&#9776;";
       topbar.insertBefore(toggleBtn, topbar.firstChild);
 
       function closeSidebar() {
-        sidebar.classList.remove("arahos-sidebar-open");
-        backdrop.classList.remove("arahos-sidebar-open");
+        sidebar.classList.remove("arahOS-sidebar-open");
+        backdrop.classList.remove("arahOS-sidebar-open");
       }
       function openSidebar() {
-        sidebar.classList.add("arahos-sidebar-open");
-        backdrop.classList.add("arahos-sidebar-open");
+        sidebar.classList.add("arahOS-sidebar-open");
+        backdrop.classList.add("arahOS-sidebar-open");
       }
 
       toggleBtn.addEventListener("click", function () {
-        sidebar.classList.contains("arahos-sidebar-open") ? closeSidebar() : openSidebar();
+        sidebar.classList.contains("arahOS-sidebar-open") ? closeSidebar() : openSidebar();
       });
       backdrop.addEventListener("click", closeSidebar);
       document.addEventListener("keydown", function (e) {
@@ -54,12 +54,12 @@
     }
 
     // --- 2) Dark mode toggle ---
-    var savedTheme = localStorage.getItem("arahos-theme");
+    var savedTheme = localStorage.getItem("arahOS-theme");
     if (savedTheme) document.documentElement.setAttribute("data-theme", savedTheme);
 
-    if (topbar && !document.querySelector("arahos-theme-toggle")) {
+    if (topbar && !document.querySelector("arahOS-theme-toggle")) {
       var themeBtn = document.createElement("button");
-      themeBtn.className = "arahos-theme-toggle";
+      themeBtn.className = "arahOS-theme-toggle";
       themeBtn.setAttribute("aria-label", "Toggle dark mode");
       themeBtn.textContent = savedTheme === "dark" ? "☀" : "🌙";
       topbar.appendChild(themeBtn);
@@ -68,7 +68,7 @@
         var isDark = document.documentElement.getAttribute("data-theme") === "dark";
         var next = isDark ? "light" : "dark";
         document.documentElement.setAttribute("data-theme", next);
-        localStorage.setItem("arahos-theme", next);
+        localStorage.setItem("arahOS-theme", next);
         themeBtn.textContent = next === "dark" ? "☀" : "🌙";
       });
     }
