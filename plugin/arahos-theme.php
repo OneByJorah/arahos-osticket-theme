@@ -59,7 +59,7 @@ class ArahosOSTicketTheme extends Plugin {
             return '';
         }
         return sprintf(
-            "<style id=\"vide-theme\" type=\"text/css\">\n%s\n</style>",
+            "<style id=\"arahos-theme\" type=\"text/css\">\n%s\n</style>",
             $css
         );
     }

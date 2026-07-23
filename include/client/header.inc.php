@@ -55,8 +55,8 @@ if (osTicket::is_ie())
     <link rel="stylesheet" href="<?php echo ROOT_PATH ?>css/jquery-ui-timepicker-addon.css?8d38b06" media="all"/>
     <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/thread.css?8d38b06" media="screen"/>
     <link rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/redactor.css?8d38b06" media="screen"/>
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/vide/vide-tokens.css?v=3">
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/vide/vide-client-portal.css?v=34">
+    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahos/arahos-tokens.css?v=3">
+    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahos/arahos-client-portal.css?v=34">
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/font-awesome.min.css?8d38b06"/>
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/flags.css?8d38b06"/>
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/rtl.css?8d38b06"/>
@@ -110,14 +110,14 @@ if (osTicket::is_ie())
             echo sprintf('<div class="notice_bar">%s</div>', $ost->getNotice());
         ?>
         <div id="header">
-            <a class="vide-header-logo" id="logo" href="<?php echo ROOT_PATH; ?>index.php"
+            <a class="arahos-header-logo" id="logo" href="<?php echo ROOT_PATH; ?>index.php"
             title="<?php echo __('Support Center'); ?>">
                 <img src="<?php echo ROOT_PATH; ?>images/arahos/arahos-banner-logo.png" border=0 alt="<?php
                 echo $ost->getConfig()->getTitle(); ?>">
             </a>
-            <div class="vide-header-right">
+            <div class="arahos-header-right">
                 <?php if($nav){ ?>
-                <ul id="nav" class="vide-header-nav">
+                <ul id="nav" class="arahos-header-nav">
                     <?php
                     if($nav && ($navs=$nav->getNavLinks()) && is_array($navs)){
                         foreach($navs as $name =>$nav) {
@@ -126,7 +126,7 @@ if (osTicket::is_ie())
                     } ?>
                 </ul>
                 <?php } ?>
-                <div class="vide-header-user">
+                <div class="arahos-header-user">
                  <?php
                     if ($thisclient && is_object($thisclient) && $thisclient->isValid()
                         && !$thisclient->isGuest()) {
@@ -138,7 +138,7 @@ if (osTicket::is_ie())
                 <?php
                 } elseif($nav) {
                     if ($cfg->getClientRegistrationMode() == 'public') { ?>
-                        <span class="vide-guest"><?php echo __('Guest User'); ?></span> <span class="vide-sep">|</span> <?php
+                        <span class="arahos-guest"><?php echo __('Guest User'); ?></span> <span class="arahos-sep">|</span> <?php
                     }
                     if ($thisclient && $thisclient->isValid() && $thisclient->isGuest()) { ?>
                         <a href="<?php echo $signout_url; ?>"><?php echo __('Sign Out'); ?></a><?php

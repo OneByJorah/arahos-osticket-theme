@@ -16,8 +16,8 @@ if ($content) {
 ?>
 <div id="auth">
   <div id="auth-left">
-    <div class="logo-wrap vide-banner-logo-wrap">
-      <img class="vide-banner-logo" src="<?php echo ROOT_PATH; ?>images/arahos/arahos-banner-logo.png" alt="<?php echo Format::htmlchars($ost->getConfig()->getTitle()); ?>">
+    <div class="logo-wrap arahos-banner-logo-wrap">
+      <img class="arahos-banner-logo" src="<?php echo ROOT_PATH; ?>images/arahos/arahos-banner-logo.png" alt="<?php echo Format::htmlchars($ost->getConfig()->getTitle()); ?>">
       <h1 class="auth-title"><?php echo Format::htmlchars($ost->getConfig()->getTitle()); ?></h1>
       <p class="auth-subtitle">Enter your Arahos network credentials</p>
     </div>

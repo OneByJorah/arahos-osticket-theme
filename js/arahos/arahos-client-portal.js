@@ -15,32 +15,32 @@
 
   ready(function () {
     // --- 0) Skip-to-content link (accessibility) ---
-    if (!document.querySelector(".vide-skip-link")) {
+    if (!document.querySelector("arahos-skip-link")) {
       var main = document.querySelector("#content, main, .container");
-      if (main && !main.id) main.id = "vide-main-content";
+      if (main && !main.id) main.id = "arahos-main-content";
       var skip = document.createElement("a");
-      skip.className = "vide-skip-link";
-      skip.href = "#" + (main ? main.id : "vide-main-content");
+      skip.className = "arahos-skip-link";
+      skip.href = "#" + (main ? main.id : "arahos-main-content");
       skip.textContent = "Skip to main content";
       document.body.insertBefore(skip, document.body.firstChild);
     }
 
     // --- 0b) Dark mode toggle, persisted via localStorage.
     //     Respects OS preference by default; button lets the person override it. ---
-    var savedTheme = localStorage.getItem("vide-theme");
+    var savedTheme = localStorage.getItem("arahos-theme");
     if (savedTheme) document.documentElement.setAttribute("data-theme", savedTheme);
 
     var headerEl = document.querySelector("#header, .header");
-    if (headerEl && !document.querySelector(".vide-theme-toggle")) {
+    if (headerEl && !document.querySelector("arahos-theme-toggle")) {
       var themeBtn = document.createElement("button");
-      themeBtn.className = "vide-theme-toggle";
+      themeBtn.className = "arahos-theme-toggle";
       themeBtn.setAttribute("aria-label", "Toggle dark mode");
       themeBtn.textContent = savedTheme === "dark" ? "☀" : "🌙";
       themeBtn.addEventListener("click", function () {
         var isDark = document.documentElement.getAttribute("data-theme") === "dark";
         var next = isDark ? "light" : "dark";
         document.documentElement.setAttribute("data-theme", next);
-        localStorage.setItem("vide-theme", next);
+        localStorage.setItem("arahos-theme", next);
         themeBtn.textContent = next === "dark" ? "☀" : "🌙";
       });
       headerEl.appendChild(themeBtn);
@@ -50,13 +50,13 @@
     var header = document.querySelector("#header, .header");
     var nav = document.querySelector("#nav, ul.nav, .navbar");
 
-    if (header && nav && !document.querySelector(".vide-nav-toggle")) {
+    if (header && nav && !document.querySelector("arahos-nav-toggle")) {
       var btn = document.createElement("button");
-      btn.className = "vide-nav-toggle";
+      btn.className = "arahos-nav-toggle";
       btn.setAttribute("aria-label", "Toggle navigation menu");
       btn.innerHTML = "&#9776;"; // hamburger icon
       btn.addEventListener("click", function () {
-        nav.classList.toggle("vide-nav-open");
+        nav.classList.toggle("arahos-nav-open");
       });
       header.appendChild(btn);
     }
@@ -77,14 +77,14 @@
     });
   });
 
-  // --- Optional toast helper — call window.videToast("Ticket submitted")
+  // --- Optional toast helper — call window.arahosToast("Ticket submitted")
   //     from anywhere (e.g. after an AJAX form submit) for a small
   //     bottom-of-screen confirmation instead of a full page reload alert. ---
-  window.videToast = function (message, duration) {
-    var existing = document.querySelector(".vide-toast");
+  window.arahosToast = function (message, duration) {
+    var existing = document.querySelector("arahos-toast");
     if (existing) existing.remove();
     var toast = document.createElement("div");
-    toast.className = "vide-toast";
+    toast.className = "arahos-toast";
     toast.setAttribute("role", "status");
     toast.textContent = message;
     document.body.appendChild(toast);

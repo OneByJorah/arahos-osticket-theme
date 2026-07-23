@@ -9,10 +9,10 @@
     else document.addEventListener("DOMContentLoaded", fn);
   }
   ready(function () {
-    document.querySelectorAll(".vide-acc-toggle").forEach(function (btn) {
+    document.querySelectorAll("arahos-acc-toggle").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        var item = btn.closest(".vide-acc-item");
-        var body = item.querySelector(".vide-acc-body");
+        var item = btn.closest("arahos-acc-item");
+        var body = item.querySelector("arahos-acc-body");
         var open = item.classList.toggle("open");
         btn.setAttribute("aria-expanded", open ? "true" : "false");
         if (open) body.removeAttribute("hidden");

@@ -1,8 +1,14 @@
-# Arahos Help Desk — osTicket Theme
+# Arahos Theme — osTicket Theme
 
 A modern navy & gold theme for [osTicket](https://osticket.com) 1.18.x, branded for the **Arahos** organization.
 
 ![Theme](https://img.shields.io/badge/osTicket-1.18.x-0a1f44) ![License](https://img.shields.io/badge/license-MIT-f2a900)
+
+## Screenshot
+
+![Arahos Theme Landing Page](screenshots/landing-page.png)
+
+The landing page features a clean navy (#0a1f44) and gold (#f2a900) color scheme with a responsive hero section, search functionality, and ticket management options.
 
 ## Features
 
@@ -24,8 +30,8 @@ sudo ./install.sh /var/www/osticket/upload
 ## Manual install
 
 1. Copy `plugin/` → `<osticket>/include/plugins/arahos-theme/`
-2. Copy `css/vide/arahos-*.css` → `<osticket>/css/vide/`
-3. Copy `js/vide/arahos-*.js` → `<osticket>/js/vide/`
+2. Copy `css/arahos/arahos-*.css` → `<osticket>/css/arahos/`
+3. Copy `js/arahos/arahos-*.js` → `<osticket>/js/arahos/`
 4. Copy `include/staff/login.tpl.php` and `login.header.php` → `<osticket>/include/staff/`
 5. Copy `include/client/header.inc.php`, `footer.inc.php`, `login.inc.php`, `accesslink.inc.php` → `<osticket>/include/client/`
 6. Copy `include/staff/header.inc.php`, `footer.inc.php` → `<osticket>/include/staff/`
@@ -41,7 +47,7 @@ Browse to `/showcase/responsive.html` after installing — a 3×3 grid (Phone / 
 
 ## Customizing brand colors
 
-Edit **`css/vide/arahos-tokens.css`** — every stylesheet reads from these CSS variables:
+Edit **`css/arahos/arahos-tokens.css`** — every stylesheet reads from these CSS variables:
 
 ```css
 --arahos-navy-900: #0a1f44;   /* header / nav */

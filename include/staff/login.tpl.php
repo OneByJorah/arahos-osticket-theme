@@ -8,11 +8,11 @@ if ($thisstaff && $thisstaff->is2FAPending())
 $company = Format::htmlchars($ost->company) ?: 'Arahos Help Desk';
 $checked = date('M j, Y · g:ia');
 ?>
-<div id="vide-login-wrap">
+<div id="arahos-login-wrap">
 
   <!-- ================= LEFT: credentials ================= -->
-  <div id="vide-login-left">
-    <div id="vide-login-card">
+  <div id="arahos-login-left">
+    <div id="arahos-login-card">
 
       <div class="vl-brandline vl-brandline-logo">
         <img class="vl-banner-logo" src="<?php echo ROOT_PATH; ?>images/arahos/arahos-banner-logo.png" alt="<?php echo $company; ?>">
@@ -58,7 +58,7 @@ $checked = date('M j, Y · g:ia');
             </div>
             <p class="vl-hint">
               Sign in with your username (e.g. <strong>firstname.lastname</strong>).<br>
-              You may also use <strong>firstname.lastname@vide.vi</strong> or <strong>firstname.lastname@k12.vi</strong>.
+              You may also use <strong>firstname.lastname@arahos.vi</strong> or <strong>firstname.lastname@k12.vi</strong>.
             </p>
             <button class="vl-signin" type="submit" name="submit"><?php echo __('Sign in'); ?></button>
 
@@ -87,7 +87,7 @@ $checked = date('M j, Y · g:ia');
   </div>
 
   <!-- ================= RIGHT: status dashboard ================= -->
-  <div id="vide-login-right">
+  <div id="arahos-login-right">
     <div class="vl-panel">
       <h3>Support services</h3>
       <p class="vl-panelsub">Arahos help desk status &amp; contact channels.</p>

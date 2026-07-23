@@ -29,13 +29,13 @@ cp -f "$HERE/plugin/"* "$TARGET/include/plugins/arahos-theme/"
 echo "    plugin files copied"
 
 # 2. CSS
-mkdir -p "$TARGET/css/vide"
-cp -f "$HERE/css/vide/arahos-"*.css "$TARGET/css/vide/"
+mkdir -p "$TARGET/css/arahos"
+cp -f "$HERE/css/arahos/arahos-"*.css "$TARGET/css/arahos/"
 echo "    theme CSS copied"
 
 # 3. JS
-mkdir -p "$TARGET/js/vide"
-cp -f "$HERE/js/vide/arahos-"*.js "$TARGET/js/vide/"
+mkdir -p "$TARGET/js/arahos"
+cp -f "$HERE/js/arahos/arahos-"*.js "$TARGET/js/arahos/"
 echo "    theme JS copied"
 
 # 4. Templates
@@ -79,8 +79,8 @@ cp -rf "$HERE/showcase" "$TARGET/" 2>/dev/null || true
 echo "    showcase copied"
 
 # 8. Permissions
-chown -R "$WEBUSER:$WEBGROUP" "$TARGET/include/plugins/arahos-theme"   "$TARGET/css/vide" "$TARGET/js/vide"   "$TARGET/include/staff" "$TARGET/include/client"   "$TARGET/images/arahos"   "$TARGET/manifest.webmanifest" "$TARGET/sw.js" "$TARGET/offline.html"   "$TARGET/.htaccess" "$TARGET/index.php"   "$TARGET/showcase" 2>/dev/null || true
-find "$TARGET/include/plugins/arahos-theme" "$TARGET/css/vide" "$TARGET/js/vide"   "$TARGET/include/staff" "$TARGET/include/client"   "$TARGET/images/arahos" "$TARGET/showcase"   -type f -exec chmod 644 {} \; 2>/dev/null || true
+chown -R "$WEBUSER:$WEBGROUP" "$TARGET/include/plugins/arahos-theme"   "$TARGET/css/arahos" "$TARGET/js/arahos"   "$TARGET/include/staff" "$TARGET/include/client"   "$TARGET/images/arahos"   "$TARGET/manifest.webmanifest" "$TARGET/sw.js" "$TARGET/offline.html"   "$TARGET/.htaccess" "$TARGET/index.php"   "$TARGET/showcase" 2>/dev/null || true
+find "$TARGET/include/plugins/arahos-theme" "$TARGET/css/arahos" "$TARGET/js/arahos"   "$TARGET/include/staff" "$TARGET/include/client"   "$TARGET/images/arahos" "$TARGET/showcase"   -type f -exec chmod 644 {} \; 2>/dev/null || true
 echo "    permissions set"
 
 cat <<EOFC

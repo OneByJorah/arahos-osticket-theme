@@ -72,7 +72,7 @@ if ($thisstaff
     <script type="text/javascript" src="ajax.php/i18n/<?php
         echo $thisstaff->getLanguage(); ?>/js"></script>
 <?php } ?>
-<script src="<?php echo ROOT_PATH; ?>js/vide/vide-staff-panel.js?v=5"></script>
+<script src="<?php echo ROOT_PATH; ?>js/arahos/arahos-staff-panel.js?v=5"></script>
 </body>
 </html>
 <?php } # endif X_PJAX ?>

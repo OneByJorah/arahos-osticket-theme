@@ -10,9 +10,9 @@ header("Content-Security-Policy: frame-ancestors ".$cfg->getAllowIframes()."; sc
     <title>Arahos Help Desk :: <?php echo __('Agent Login'); ?></title>
     <link rel="stylesheet" href="css/login.css" type="text/css" />
     <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/font-awesome.min.css?8d38b06"/>
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/vide/vide-tokens.css?v=5">
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/vide/vide-staff-panel.css?v=5">
-    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/vide/vide-agent-login.css?v=3">
+    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahos/arahos-tokens.css?v=5">
+    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahos/arahos-staff-panel.css?v=5">
+    <link type="text/css" rel="stylesheet" href="<?php echo ROOT_PATH; ?>css/arahos/arahos-agent-login.css?v=3">
     <meta name="robots" content="noindex" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="pragma" content="no-cache" />

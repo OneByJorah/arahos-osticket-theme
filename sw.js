@@ -1,23 +1,23 @@
 /* ============================================================
-   VIDE OIT Help Desk — Service Worker (PWA offline support)
+   ARAHOS OIT Help Desk — Service Worker (PWA offline support)
    Strategy:
      - Static assets (css/js/images/fonts): cache-first
      - HTML pages: network-first, fall back to cache + offline page
    Bump CACHE_VERSION to force refresh on deploy.
    ============================================================ */
-const CACHE_VERSION = 'vide-v1';
+const CACHE_VERSION = 'arahos-v1';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const RUNTIME_CACHE = CACHE_VERSION + '-runtime';
 
 const PRECACHE = [
   '/index.php',
   '/offline.html',
-  '/css/vide/vide-tokens.css',
-  '/css/vide/vide-client-portal.css',
-  '/js/vide/vide-client-portal.js',
-  '/images/vide/viseal.png',
-  '/images/vide/pwa/icon-192.png',
-  '/images/vide/pwa/icon-512.png'
+  '/css/arahos/arahos-tokens.css',
+  '/css/arahos/arahos-client-portal.css',
+  '/js/arahos/arahos-client-portal.js',
+  '/images/arahos/viseal.png',
+  '/images/arahos/pwa/icon-192.png',
+  '/images/arahos/pwa/icon-512.png'
 ];
 
 // Install: precache core assets

@@ -15,7 +15,7 @@ SET @cat_tutorials = (SELECT category_id FROM ost_faq_category WHERE name='Tutor
 INSERT INTO ost_faq (category_id, ispublished, question, answer, keywords, notes, created, updated) VALUES
 (@cat_start, 1, 'What is a Arahos account and how do I get one?',
  '<p>A Arahos account is your official Virgin Islands Department of Education network login (usually <b>firstname.lastname</b>). It gives you access to email, the help desk, and district systems.</p><p>If you do not have an account yet, ask your school administrator or open a ticket selecting <b>Account Request</b> as the help topic.</p>',
- 'account,login,vide,network', '', @now, @now),
+ 'account,login,arahos,network', '', @now, @now),
 (@cat_start, 1, 'How do I reset my password?',
  '<p>Visit the Password Reset Portal or contact the help desk. To reset:</p><ol><li>Go to <b>http://it.arahos.example</b></li><li>Click <b>Forgot Password</b></li><li>Enter your Arahos email and follow the emailed instructions</li></ol><p>If you are locked out, open a ticket or call STX (340) 774-0100 or STTJ (340) 775-2250.</p>',
  'password,reset,locked out,forgot', '', @now, @now),

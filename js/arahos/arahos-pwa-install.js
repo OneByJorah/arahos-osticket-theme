@@ -21,7 +21,7 @@
 
   // --- 2) Install banner ---
   var deferredPrompt = null;
-  var dismissedKey = "vide-install-dismissed";
+  var dismissedKey = "arahos-install-dismissed";
 
   window.addEventListener("beforeinstallprompt", function (e) {
     e.preventDefault();
@@ -41,12 +41,12 @@
 
   function showBanner() {
     if (isInStandalone() || wasDismissed()) return;
-    if (document.getElementById("vide-install-banner")) return;
+    if (document.getElementById("arahos-install-banner")) return;
 
     var bar = document.createElement("div");
-    bar.id = "vide-install-banner";
+    bar.id = "arahos-install-banner";
     bar.innerHTML =
-      '<img src="/images/vide/pwa/icon-192.png" alt="Arahos" class="vib-icon">' +
+      '<img src="/images/arahos/pwa/icon-192.png" alt="Arahos" class="vib-icon">' +
       '<div class="vib-text">' +
         '<strong>Install Arahos Help Desk</strong>' +
         '<span>Add to your home screen for quick access</span>' +
@@ -77,9 +77,9 @@
 
   function showIOSHelp() {
     var modal = document.createElement("div");
-    modal.className = "vide-ios-help";
+    modal.className = "arahos-ios-help";
     modal.innerHTML =
-      '<div class="vide-ios-card">' +
+      '<div class="arahos-ios-card">' +
         '<h3>Install on your iPhone</h3>' +
         '<ol>' +
           '<li>Tap the <strong>Share</strong> button <span class="ios-share">&#8679;</span></li>' +
@@ -92,7 +92,7 @@
     modal.querySelector(".vib-install").addEventListener("click", function () {
       try { localStorage.setItem(dismissedKey, "1"); } catch (e) {}
       modal.remove();
-      var b = document.getElementById("vide-install-banner"); if (b) b.remove();
+      var b = document.getElementById("arahos-install-banner"); if (b) b.remove();
     });
   }
 
@@ -103,6 +103,6 @@
 
   // Hide banner once installed
   window.addEventListener("appinstalled", function () {
-    var b = document.getElementById("vide-install-banner"); if (b) b.remove();
+    var b = document.getElementById("arahos-install-banner"); if (b) b.remove();
   });
 })();

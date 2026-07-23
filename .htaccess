@@ -1,4 +1,4 @@
-# VIDE OIT Help Desk — PWA headers
+# ARAHOS OIT Help Desk — PWA headers
 AddType application/manifest+json .webmanifest
 AddType text/javascript .js
 

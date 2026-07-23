@@ -22,8 +22,8 @@ if (($lang = Internationalization::getCurrentLanguage()) && $lang != 'en_US') { 
         print $api->client(false);
     ?>);
 </script>
-    <script src="<?php echo ROOT_PATH; ?>js/vide/vide-client-portal.js?v=2"></script>
-    <script src="<?php echo ROOT_PATH; ?>js/vide/vide-pwa-install.js?v=1"></script>
-    <script src="<?php echo ROOT_PATH; ?>js/vide/vide-landing.js?v=1"></script>
+    <script src="<?php echo ROOT_PATH; ?>js/arahos/arahos-client-portal.js?v=2"></script>
+    <script src="<?php echo ROOT_PATH; ?>js/arahos/arahos-pwa-install.js?v=1"></script>
+    <script src="<?php echo ROOT_PATH; ?>js/arahos/arahos-landing.js?v=1"></script>
 </body>
 </html>

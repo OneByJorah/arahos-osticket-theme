@@ -30,8 +30,8 @@ if (osTicket::is_ie())
 <?php
     // Arahos theme: inject navy/gold CSS inline (plugin root on disk).
     if (class_exists('ArahosOSTicketTheme')
-            && ($__vide = ArahosOSTicketTheme::cssBlock('staff'))) {
-        echo $__vide, "\n";
+            && ($__arahos = ArahosOSTicketTheme::cssBlock('staff'))) {
+        echo $__arahos, "\n";
     }
 ?>
     <!--[if IE]>
@@ -79,10 +79,10 @@ if (osTicket::is_ie())
     ?>
 
     <!-- ===== Arahos agent-panel top bar ===== -->
-    <div id="vide-staff-topbar">
-        <a class="vide-badge" href="<?php echo ROOT_PATH ?>scp/index.php" title="Arahos Help Desk">VI</a>
-        <strong class="vide-agent-title">Arahos &mdash; Agent Panel</strong>
-        <div class="vide-agent-who">
+    <div id="arahos-staff-topbar">
+        <a class="arahos-badge" href="<?php echo ROOT_PATH ?>scp/index.php" title="Arahos Help Desk">VI</a>
+        <strong class="arahos-agent-title">Arahos &mdash; Agent Panel</strong>
+        <div class="arahos-agent-who">
             <?php echo sprintf(__('Welcome, %s.'), '<strong>'.Format::htmlchars($thisstaff->getFirstName()).'</strong>'); ?>
             <?php if($thisstaff->isAdmin() && !defined('ADMINPAGE')) { ?>
             | <a href="<?php echo ROOT_PATH ?>scp/admin.php" class="no-pjax"><?php echo __('Admin Panel'); ?></a>
