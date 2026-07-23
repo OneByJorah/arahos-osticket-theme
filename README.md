@@ -4,11 +4,22 @@ A modern navy & gold theme for [osTicket](https://osticket.com) 1.18.x, branded 
 
 ![Theme](https://img.shields.io/badge/osTicket-1.18.x-0a1f44) ![License](https://img.shields.io/badge/license-MIT-f2a900)
 
-## Screenshot
+## Screenshots
 
+### Landing Page
 ![arahOS Theme Landing Page](screenshots/landing-page.png)
 
 The landing page features a clean navy (#0a1f44) and gold (#f2a900) color scheme with a responsive hero section, search functionality, and ticket management options.
+
+### Agent Login
+![arahOS Agent Login](screenshots/agent-login.png)
+
+Split-screen agent login with credentials form and live support services status panel.
+
+### Staff Dashboard
+![arahOS Staff Dashboard](screenshots/staff-dashboard.png)
+
+Full-width staff dashboard with navigation, ticket management, and agent controls.
 
 ## Features
 
