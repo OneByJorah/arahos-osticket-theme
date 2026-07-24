@@ -1,14 +1,24 @@
-# arahOS Theme — osTicket Theme
+<div align="center">
+
+![arahos-osticket-theme banner](docs/assets/banner.svg)
+
+# arahos-osticket-theme
+
+Arahos: a modern branded theme and plugin for osTicket
+
+![License](https://img.shields.io/badge/license-MIT-brightgreen)
+![Language](https://img.shields.io/badge/language-CSS-blue)
+</div>
+
+---
+
+<p align="center">
+  <img src="docs/assets/screenshot.png" alt="arahos-osticket-theme preview" width="90%">
+</p>
 
 A modern navy & gold theme for [osTicket](https://osticket.com) 1.18.x, branded for the **arahOS** organization.
 
 ![Theme](https://img.shields.io/badge/osTicket-1.18.x-0a1f44) ![License](https://img.shields.io/badge/license-MIT-f2a900)
-
-## Screenshot
-
-![arahOS Theme Landing Page](screenshots/landing-page.png)
-
-The landing page features a clean navy (#0a1f44) and gold (#f2a900) color scheme with a responsive hero section, search functionality, and ticket management options.
 
 ## Features
 
@@ -67,3 +77,19 @@ Edit **`css/arahOS/arahOS-tokens.css`** — every stylesheet reads from these CS
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). All contributions follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## 🔒 Security
+
+Found a vulnerability? Please follow our [Security Policy](SECURITY.md) and report privately to `security@jorahone.com`.
+
+## 📄 License
+
+[MIT License](LICENSE) © Jhonattan L. Jimenez (OneByJorah)
+
+---
+
+<p align="center">Built with 🌴 by <a href="https://github.com/OneByJorah">OneByJorah</a> · <a href="https://jorahone.com">jorahone.com</a></p>
